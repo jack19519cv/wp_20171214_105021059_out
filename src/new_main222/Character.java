@@ -1,18 +1,15 @@
-package new_Main;
+package new_main222;
 
 import java.awt.*;
 
-/**
- * Created by jackwang on 2017/12/16.
- */
-public class Monster {
+public class Character{
     private String id;
     private int nowHp,maxHp;
     private boolean charface=false;
     private Point local;
     private int charType;
     private String nowC="alert";
-    public Monster(String id,int nowHp,int maxHp,int charType){
+    public Character(String id,int nowHp,int maxHp,int charType){
         this.id=id;
         this.nowHp=nowHp;
         this.maxHp=maxHp;
@@ -66,8 +63,8 @@ public class Monster {
         return charType;
     }
 
-
-
-    }
-
-
+//    @Override
+//    public void run() {
+//
+//    }
+}

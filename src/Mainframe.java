@@ -6,10 +6,6 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
-/**
- * Created by jackwang on 2017/12/15.
- */
 public class Mainframe  extends JFrame{
 private Container cp ;
     private ImagePanel jpn= new ImagePanel();
@@ -68,8 +64,9 @@ private Container cp ;
     }
     @Override
     protected  void paintComponent(Graphics g){
+        Graphics2D g2d=(Graphics2D) g;
         super.paintComponent(g);
-        g.drawImage(image,0,0,null);
+        g2d.drawImage(image,0,0,null);
     }
     public  int getImgWidth(){
         return imgW;

@@ -38,17 +38,6 @@ public class Map {
 //            System.out.println();
         }
     }
-    public void setMob(int x,int y,int h,int w){
-        int startX=x/10;
-        int startY=y/10;
-        for(int i=0;i<h/10;i++){
-            for(int j=0;j<w/10;j++){
-                map[startY+i][startX+j]=7;
-//                System.out.print("["+startY+i+"],["+startX+j+"]\t");
-            }
-//            System.out.println();
-        }
-    }
     public boolean setObjCheck(int x,int y,int h,int w){
         boolean flag=true;
         int startX=x/10;
@@ -127,6 +116,32 @@ public class Map {
         }
 
     }
+    public boolean setWalkCheck(int x,int y,int h,int w, boolean face){
+        boolean charface=face;
+        int charX;
+        int charY;
+        if(charface==true){
+            charX=(x)/10;
+            charY=(y+81-10)/10;
+            if(map[charY][(charX-1)]!=1){
+                return true;
+            }else{
+                System.out.println("Walk:"+(charX-1)+","+charY);
+                return false;
+            }
+        }else if(charface==false){
+            charX=(x+84-10)/10;
+            charY=(y+81-10)/10;
+            if(map[charY][(charX+1)]!=1){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            System.out.println("walk錯誤");
+            return  false;
+        }
+    }
     public boolean setCharJump(int x,int y,int n){
         boolean flag=true;
         //+charLabel h:81 and w:84
@@ -166,7 +181,7 @@ public class Map {
         //+10px為腳底下面那一格
         int charY=(y+71+10)/10;
         //抓底下8格做判定
-        if(map[charY][(charX)]==0&&map[charY][(charX+20/10)]==0&&map[charY][(charX+50/10)]==0&&map[charY][(charX+70/10)]==0){
+        if(map[charY][(charX+20/10)]==0&&map[charY][(charX+50/10)]==0){
             return true;
         }else{
             return false;
@@ -187,7 +202,7 @@ public class Map {
         int startY=y/10;
         for(int i=0;i<h/10;i++){
             for(int j=0;j<w/10;j++){
-                map[startY+i][startX+j]=1;
+                map[startY+i][startX+j]=0;
 //                System.out.print("["+startY+i+"],["+startX+j+"]\t");
             }
 //            System.out.println();

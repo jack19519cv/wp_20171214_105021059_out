@@ -1,12 +1,17 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.util.Random;
 
 /**
  * Created by jackwang on 2017/12/14.
  */
 public class Monster extends JLabel implements Runnable {
+    private BufferedImage image;
+    // private Image image;
+    private  int imgW, imgH;
     private  int frmH,frmW,x,y,r1,r;
     private ImageIcon jump[]=new ImageIcon[3];
     private ImageIcon walk[]=new ImageIcon[6];
@@ -19,13 +24,15 @@ private  boolean Flag = true;
     private  Timer walk1;
     private  Timer standT;
     private Random rand = new Random();
-    public Monster(int frmH,int frmW ){
+    public Monster(int frmH, int frmW ){
+
         this.frmH= frmH;
         this.frmW = frmW;
         x=rand.nextInt(frmW-100);
         //y=rand.nextInt(frmH-100);
         y=400;
-        r=rand.nextInt(6);
+//        r=rand.nextInt(6);
+        r=1;
         setMobAnimal();
         if(r==1){
             this.Flag=false;
@@ -33,22 +40,7 @@ private  boolean Flag = true;
        // this.setIcon(imgIcon[r][r1=rand.nextInt(1)]);
         this.setIcon(walk[r]);
        this.setBounds(x,y,80,80);//label 大小
-//
-//        if(right==true&&left==true){
-//            r1=rand.nextInt(1000);
-//            if(r1>700) {
-//               standT.start();
-//                walk1.stop();
-//                walkT.stop();
-//                r1=rand.nextInt(1000);
-//            }else{
-//                standT.stop();
-//                walk1.start();
-//                walkT.start();
-//                r1=rand.nextInt(1000);
-//            }
-//
-//        }
+
     }
 
     @Override
@@ -66,7 +58,7 @@ private  boolean Flag = true;
             public void actionPerformed(ActionEvent e) {
                 if(Monster.this.Flag){
                     if ((x-10)>0){
-
+                    //向左
                         x-=10;
                     }else{
                         Monster.this.Flag=!Monster.this.Flag;
@@ -76,7 +68,9 @@ private  boolean Flag = true;
                     }
                     Monster.this.setLocation(x,y);
                 }else{
-                    if((x+Monster.this.getIcon().getIconWidth()+20)<frmW){
+
+                    if((x+ Monster.this.getIcon().getIconWidth()+20)<frmW){
+                        //向右
                         x+=10;
 
                     }else{
@@ -95,11 +89,13 @@ private  boolean Flag = true;
             public void actionPerformed(ActionEvent e) {
 
                     if(r==1) {
+
                         Monster.this.setIcon(walk[t1Tmp% 3+ 3]);
                         left=true;
                         t1Tmp++;
 
                     }else  {
+
                         Monster.this.setIcon(walk[t1Tmp% 3 ]);
                         right=true;
                         t1Tmp++;
@@ -108,49 +104,7 @@ private  boolean Flag = true;
                 }
 
         });
-        standT=new Timer(250, new ActionListener() {
-            int t2Tmp=0;
-            @Override
-            public void actionPerformed(ActionEvent e) {
 
-                if(r==1) {
-                    Monster.this.setIcon(stand[t2Tmp% 3+ 3]);
-
-                    t2Tmp++;
-
-                }else  {
-                    Monster.this.setIcon(stand[t2Tmp% 3 ]);
-                    t2Tmp++;
-
-                }
-                Monster.this.setLocation(x,y);
-            }
-
-        });
-t1=new Timer(1000, new ActionListener() {
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        int randm=0;
-        randm=rand.nextInt(10000);
-        if(getleft()||getright()){
-
-            if(randm>5000){
-                walk1.stop();
-                walkT.stop();
-                standT.start();
-            }
-        }else{
-//            int randm=0;
-//            randm=rand.nextInt(10000);
-//            if(randm<5000){
-                standT.stop();
-                walk1.start();
-                walkT.start();
-//            }
-
-        }
-    }
-});
 
 
 
@@ -159,8 +113,9 @@ t1=new Timer(1000, new ActionListener() {
 
         walk1.start();
         walkT.start();
-t1.start();
+
 }
+
 public boolean getleft(){
     return left;
 }
@@ -171,12 +126,9 @@ public boolean getleft(){
         for(int i=0;i<3;i++){
             walk[i]=new ImageIcon("Slime/walk/left/move."+Integer.toString(i)+".png");
         }
-
         for(int i=3;i<6;i++){
             walk[i]=new ImageIcon("Slime/walk/right/move."+Integer.toString(i-3)+".png");
-
         }
-
         for(int i=0;i<3;i++) {
             jump[i] = new ImageIcon("Slime/jump/left/move." + Integer.toString(i) + ".png");
         }
@@ -190,35 +142,21 @@ public boolean getleft(){
             stand[i]=new ImageIcon("Slime/stand/right/move."+Integer.toString(i-3)+".png");
         }
 
-
-
-//     t1= new Timer(rand.nextInt(1000) + 50, new ActionListener() {
-//         @Override
-//         public void actionPerformed(ActionEvent e) {
-//          if(Monster.this.Flag){
-//              if ((x-10)>0){
-//                  x-=10;
-//              }else{
-//                  Monster.this.Flag=!Monster.this.Flag;
-//                  r=1;
-//                  Monster.this.setIcon(imgIcon[r][r1]);
-//                  x+=10;
-//              }
-//              Monster.this.setLocation(x,y);
-//          }else{
-//   if((x+Monster.this.getIcon().getIconWidth()+20)<frmW){
-//       x+=10;
-//   }else{
-//       Monster.this.Flag=!Monster.this.Flag;
-//       r=0;
-//       Monster.this.setIcon(imgIcon[r][r1]);
-//       x-=10;
-//   }
-//   Monster.this.setLocation(x,y);
-//          }
-//         }
-//     });
-
+    }
+//    public void paint(Graphics g){
+//        Graphics2D g2d=(Graphics2D) g;
+////        g2d.drawImage(image,0,0,null,this);
+//        if(x<=0){
+//            g2d.drawImage(image,1000+x,y,1000, 600,this);
+//        }
+//        g2d.drawImage(image,x,y,1000, 600,this);
+//        if(x<=-1000){
+//            x=0;
+//        }
+//    }
+    public  int getImgWidth(){return imgW;}
+    public int getImgHeight(){
+        return imgH;
     }
 
 }

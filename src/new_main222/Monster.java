@@ -60,14 +60,17 @@ private  boolean Flag = true;
     public  void run(){
         walkT= new Timer(125/*走路速度*/, new ActionListener() {
 
-//            int t1Tmp=1;
+           int t1Tmp=0;
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(Monster.this.Flag){
                     if ((x-10)>0){
                     //向左
+                        Monster.this.setIcon(walk[t1Tmp% 3]);
+                        left=true;//左
+                        t1Tmp++;
                         x-=10;
-                     //   Monster.this.repaint();
+                       Monster.this.repaint();
                     }else{
                         Monster.this.Flag=!Monster.this.Flag;
                         r=1;
@@ -80,6 +83,9 @@ private  boolean Flag = true;
 
                     if((x+ Monster.this.getIcon().getIconWidth()+20)<frmW){
                         //向右
+                        Monster.this.setIcon(walk[t1Tmp% 3+ 3 ]);
+                        right=true;//右
+                        t1Tmp++;
                         x+=10;
                       //  Monster.this.repaint();
                     }else{
@@ -88,7 +94,7 @@ private  boolean Flag = true;
                         x-=10;
                     }
                     Monster.this.setLocation(x,y);
-                  //  Monster.this.repaint();
+                   Monster.this.repaint();
                 }
             }
         });
@@ -101,13 +107,13 @@ private  boolean Flag = true;
                     if(r==1) {
 
                         Monster.this.setIcon(walk[t1Tmp% 3+ 3]);
-                        left=true;
+                        left=true;//左
                         t1Tmp++;
                        // Monster.this.repaint();
                     }else  {
 
                         Monster.this.setIcon(walk[t1Tmp% 3 ]);
-                        right=true;
+                        right=true;//右
                         t1Tmp++;
 
                     }
@@ -115,15 +121,50 @@ private  boolean Flag = true;
                 }
 
         });
+        standT=new Timer(500, new ActionListener() {
+            int t1Tmp=0;
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                if(r==1) {
+
+                    Monster.this.setIcon(stand[t1Tmp% 3+ 3]);
+                    left=true;
+                    t1Tmp++;
+                    // Monster.this.repaint();
+                }else  {
+
+                    Monster.this.setIcon(stand[t1Tmp% 3 ]);
+                    right=true;
+                    t1Tmp++;
+
+                }
+                Monster.this.repaint();
+            }
+
+        });
+t1=new Timer(250, new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        r1=rand.nextInt(60000);
+        if(r1>10000){
+            standT.stop();
+           // walk1.start();
+            walkT.start();
+        }else{
+           // walk1.stop();
+            walkT.stop();
+            standT.start();
+        }
+    }
+});
 
 
 
 
-
-
-
-        walk1.start();
-        walkT.start();
+t1.start();
+       // walk1.start();
+      //  walkT.start();
 
 }
     public void paint(Graphics g){
@@ -158,10 +199,10 @@ public boolean getleft(){
             jump[i]=new ImageIcon("Slime/jump/right/move."+Integer.toString(i-3)+".png");
         }
         for(int i=0;i<3;i++) {
-            stand[i] = new ImageIcon("Slime/stand/left/move." + Integer.toString(i) + ".png");
+            stand[i] = new ImageIcon("Slime/stand/left/stand." + Integer.toString(i) + ".png");
         }
-        for(int i=0;i<3;i++) {
-            stand[i]=new ImageIcon("Slime/stand/right/move."+Integer.toString(i-3)+".png");
+        for(int  i=3;i<6;i++) {
+            stand[i]=new ImageIcon("Slime/stand/right/stand."+Integer.toString(i-3)+".png");
         }
 
     }

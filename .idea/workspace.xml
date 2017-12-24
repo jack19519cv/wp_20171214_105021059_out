@@ -2,67 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b171ef8e-ba84-4a8e-a6c3-1e1b6e4d4474" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/background2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backgroundCG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/floor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/floor2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/floorObj0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/floorObj1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/floorObj2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mamytree.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sky.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skybackground.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skybackgroundRe.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_Main/SkyPane.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_Main/StartFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/CharacterT.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/MainFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/Map.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/Mob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/Monster.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/SkyPane.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/StartFrame.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/aa.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/new_main222/threadTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/project-template.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Monster$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Monster$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/Monster.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/new_Main/Monster.java" afterPath="$PROJECT_DIR$/src/new_main222/Character.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/ImagePanel.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/ImagePanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Mainframe$1.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Mainframe$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Mainframe.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Mainframe.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Monster$1.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Monster$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Monster$2.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Monster$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Monster.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/Monster.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/Main.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$1.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$2.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$3.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$4.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$5.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$6.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$7.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$8.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/MainFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/Map.class" afterPath="$PROJECT_DIR$/out/production/wp_20171214_105021059_out/new_Main/Map.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mainframe.java" afterPath="$PROJECT_DIR$/src/Mainframe.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Monster.java" afterPath="$PROJECT_DIR$/src/Monster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/new_Main/Character.java" afterPath="$PROJECT_DIR$/src/new_Main/Character.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/new_Main/CharacterT.java" afterPath="$PROJECT_DIR$/src/new_Main/CharacterT.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/new_Main/Main.java" afterPath="$PROJECT_DIR$/src/new_Main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/new_Main/MainFrame.java" afterPath="$PROJECT_DIR$/src/new_Main/MainFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/new_Main/Map.java" afterPath="$PROJECT_DIR$/src/new_Main/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp_20171214_105021059_out.iml" afterPath="$PROJECT_DIR$/wp_20171214_105021059_out.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/new_main222/Monster.java" afterPath="$PROJECT_DIR$/src/new_main222/Monster.java" />
     </list>
     <ignored path="wp_20171214_105021059_out.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,7 +26,7 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="2640">
               <caret line="118" column="43" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
               <folding />
             </state>
@@ -96,7 +36,7 @@
       <file leaf-file-name="SkyPane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/new_main222/SkyPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="792">
               <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="39" />
               <folding />
             </state>
@@ -106,8 +46,8 @@
       <file leaf-file-name="Monster.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            <state relative-caret-position="417">
+              <caret line="85" column="61" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -126,7 +66,7 @@
       <file leaf-file-name="Mainframe.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mainframe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
+            <state relative-caret-position="1440">
               <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -198,6 +138,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -267,9 +208,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp_20171214_105021059_out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp_20171214_105021059_out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Slime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp_20171214_105021059_out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp_20171214_105021059_out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Slime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="right" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp_20171214_105021059_out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp_20171214_105021059_out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Slime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="left" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -599,8 +597,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -609,7 +607,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05371248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05371248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -648,6 +646,48 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2832">
+          <caret line="118" column="43" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/SkyPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mainframe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3648">
@@ -828,7 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +968,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mainframe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
+        <state relative-caret-position="1440">
           <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -948,7 +986,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="2640">
           <caret line="118" column="43" selection-start-line="118" selection-start-column="43" selection-end-line="118" selection-end-column="43" />
           <folding />
         </state>
@@ -956,7 +994,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/new_main222/SkyPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="792">
           <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="39" />
           <folding />
         </state>
@@ -964,8 +1002,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="417">
+          <caret line="85" column="61" selection-start-line="85" selection-start-column="61" selection-end-line="85" selection-end-column="61" />
           <folding />
         </state>
       </provider>

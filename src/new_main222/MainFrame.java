@@ -2,12 +2,16 @@ package new_main222;
 
 //import javafx.scene.layout.BackgroundImage;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class  MainFrame extends JFrame {
@@ -18,7 +22,7 @@ public class  MainFrame extends JFrame {
     private ImageIcon attack[]=new ImageIcon[8];
     private JLayeredPane jlyPane = new JLayeredPane();
     private ArrayList<Character> charList = new ArrayList<Character>();
-    private ArrayList<Monster> MonsterList= new ArrayList<Monster>();
+    private ArrayList<Monster> jpn= new ArrayList<Monster>();
     private ArrayList<Thread> threadList = new ArrayList<Thread>();
     private ArrayList<Thread> thread1List = new ArrayList<Thread>();
     private SkyPane testPane = new SkyPane();
@@ -43,10 +47,16 @@ public class  MainFrame extends JFrame {
     private JLabel lb=new JLabel();
     //Mob monster =new Mob();
     private  int imgW, imgH;
+    private  int mx, my;
+
+   // private ImagePanel jpn= new ImagePanel();
 //    private JPanel background=new JPanel();
 //    private CharacterT CharacterT=new CharacterT(alert,jump,walk,stand,"alert",0);
 
     public MainFrame() {
+
+       // imgW = jpn.getImgWidth();
+       // imgH = jpn.getImgHeight();
         initComp();
     }
 
@@ -103,7 +113,7 @@ public class  MainFrame extends JFrame {
         floorlb.setOpaque(true);
 
         //建立Sky
-       testPane.setBounds(0,0,1000,300);
+       testPane.setBounds(0,0,1000,500);
         imgW = testPane.getImgWidth();
         imgH = testPane.getImgHeight();
         testPane.setLayout(null);
@@ -116,10 +126,18 @@ public class  MainFrame extends JFrame {
 //        testPane.setBackground(new Color(255, 69, 154));
         jlyPane.add(testPane, JLayeredPane.PALETTE_LAYER,new Integer(103));
         //建立MOB
-        MonsterList.add(new Monster(1000,1000));
-        jlyPane.add(MonsterList.get(MonsterList.size()-1), JLayeredPane.PALETTE_LAYER,new Integer(103));
-        thread1List.add(new Thread(MonsterList.get(MonsterList.size()-1)));
+      //  jpn.setLayout(new GridLayout(1,1,5,5));
+
+//jpn.setBounds(0,0,20,1000);
+
+        jpn.add(new Monster(600,1000,this));
+      // jpn.add(MonsterList.get(MonsterList.size()-1));
+
+        jlyPane.add(jpn.get(jpn.size()-1), JLayeredPane.PALETTE_LAYER,new Integer(103));
+        thread1List.add(new Thread(jpn.get(jpn.size()-1)));
         thread1List.get(0).start();
+
+//        thread1List.get(1).start();
 
 //        jlyPane.add(characterlb[1], JLayeredPane.PALETTE_LAYER,new Integer(102));
         //test
@@ -497,6 +515,7 @@ public class  MainFrame extends JFrame {
 //        jlyPane.add(backgroundP, JLayeredPane.PALETTE_LAYER,new Integer(102));
 //        jlyPane.add();
     }
+
     private void setCharAnimal(int charType){
         for(int i=0;i<3;i++){
             alert[i]=new ImageIcon("NewCharacter/Character0"+Integer.toString(charType)+"/alert/left/alert_"+Integer.toString(i)+".png");
@@ -537,6 +556,7 @@ public class  MainFrame extends JFrame {
         for(int i=6;i<8;i++){
             attack[i]=new ImageIcon("NewCharacter/Character0"+Integer.toString(charType)+"/attack/right/stabO2_"+Integer.toString(i-6)+".png");
         }
+
 //        for(int i=12;i<15;i++){
 //
 //        }
@@ -549,3 +569,6 @@ public class  MainFrame extends JFrame {
 //
 //    }
 }
+
+
+

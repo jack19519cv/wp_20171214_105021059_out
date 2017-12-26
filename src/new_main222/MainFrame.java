@@ -113,7 +113,7 @@ public class  MainFrame extends JFrame {
         floorlb.setOpaque(true);
 
         //建立Sky
-       testPane.setBounds(0,0,1000,500);
+       testPane.setBounds(0,0,1000,300);
         imgW = testPane.getImgWidth();
         imgH = testPane.getImgHeight();
         testPane.setLayout(null);
@@ -130,7 +130,7 @@ public class  MainFrame extends JFrame {
 
 //jpn.setBounds(0,0,20,1000);
 
-        jpn.add(new Monster(600,1000,this));
+        jpn.add(new Monster(1000,1000));
       // jpn.add(MonsterList.get(MonsterList.size()-1));
 
         jlyPane.add(jpn.get(jpn.size()-1), JLayeredPane.PALETTE_LAYER,new Integer(103));

@@ -107,43 +107,22 @@ public class Monster extends JLabel implements Runnable {
             @Override
 
             public void actionPerformed(ActionEvent e) {
-
                 if(Monster.this.Flag){
-
                     if ((x-10)>0){
-
                         //向左
-
                         Monster.this.setIcon(walk[t1Tmp% 3]);
-
                         left=true;//左
-
                         t1Tmp++;
-
                         x-=10;
-
                         Monster.this.repaint();
-
                     }else{
-
                         Monster.this.Flag=!Monster.this.Flag;
-
                         r=1;
-
-
-
                         x+=10;
-
                     }
-
                     Monster.this.setLocation(x,y);
-
                     //   Monster.this.repaint();
-
                 }else{
-
-
-
                     if((x+ Monster.this.getIcon().getIconWidth()+20)<frmW){
 
                         //向右

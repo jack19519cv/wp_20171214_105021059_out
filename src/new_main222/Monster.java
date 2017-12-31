@@ -25,8 +25,9 @@ public class Monster extends JPanel implements Runnable {
     private ImageIcon stand[]=new ImageIcon[6];
     private boolean up,down,right,left,att=false;
     private JLabel jlb=new JLabel();
-    private JLabel jlbHp=new JLabel("1235646513");
-    private JLabel jlbName=new JLabel("1235646513");
+    private JLabel jlbHp=new JLabel("1000000");
+    private JLabel jlbName=new JLabel("惡水靈");
+    private  Dimension place = new Dimension(50,30);
    // private ImageIcon[][] imgIcon={{new ImageIcon("slimetest/slime1.png")},{new ImageIcon("slimetest/slime.png")}};
 private  boolean Flag = true;
     private  Timer t1;
@@ -37,7 +38,7 @@ private  boolean Flag = true;
 
   private  Mob mob;
     public Monster(int frmH, int frmW ){
-        this.setLayout(new GridLayout(3,1,1,1));
+        this.setLayout(new GridLayout(3,1,0,0));
 
         setMobAnimal();
       //  this.setOpaque(false);
@@ -53,6 +54,8 @@ private  boolean Flag = true;
         this.frmH= frmH;
         this.frmW = frmW;
         this.setOpaque(false);
+        jlbHp.setForeground(Color.orange);
+        jlbName.setForeground(Color.orange);
         x=rand.nextInt(frmW);
         //y=rand.nextInt(frmH-100);
        // y=390;
@@ -66,7 +69,8 @@ private  boolean Flag = true;
         }
        // this.setIcon(imgIcon[r][r1=rand.nextInt(1)]);
        this.setBounds(x,y,120,170);//panel大小
-
+jlbHp.setSize(place);
+        jlbName.setSize(place);
         this.add(jlbHp);
         this.add(jlb);
         
@@ -101,7 +105,7 @@ private  boolean Flag = true;
                 //   Monster.this.repaint();
             } else {
 
-                if ((x + 20) < frmW) {
+                if ((x+jlb.getIcon().getIconWidth()+20)<frmW) {
                     //向右
                     jlb.setIcon(walk[t1Tmp % 3+3]);
 
@@ -115,7 +119,7 @@ private  boolean Flag = true;
                     x -= 10;
                 }
                 Monster.this.setLocation(x, y);
-                Monster.this.repaint();
+//                Monster.this.repaint();
             }
         }
     });
@@ -154,7 +158,7 @@ private  boolean Flag = true;
                 t1Tmp++;
                 if(t1Tmp==6){
                     standT.stop();
-                    // walk1.start();
+
                     walkT.start();
                     t1Tmp=0;
                 }
@@ -165,13 +169,13 @@ private  boolean Flag = true;
                 t1Tmp++;
                 if(t1Tmp==6){
                     standT.stop();
-                    // walk1.start();
+
                     walkT.start();
                     t1Tmp=0;
                 }
 
             }
-            Monster.this.repaint();
+//            Monster.this.repaint();
 //            System.out.println(t1Tmp);
         }
 

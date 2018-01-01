@@ -143,7 +143,7 @@ jbtnDel.setFocusable(false);
         jbtnAdd.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-        jpn.add(new Monster(1000,1000));
+        jpn.add(new Monster(1000,1000));//走的寬度
 
         jlyPane.add(jpn.get(jpn.size()-1), JLayeredPane.PALETTE_LAYER,new Integer(103));
 
@@ -151,7 +151,10 @@ jbtnDel.setFocusable(false);
         thread1List.get(thread1List.size()-1).start();
                 System.out.println(jpn.size());
                 System.out.println(thread1List.size());
-countmob=1;
+                if (countmob>0){
+                    countmob=1;
+                }
+
     }
 });
 
@@ -166,7 +169,10 @@ countmob=1;
                 thread1List.remove(thread1List.size()-1);
                 System.out.println(jpn.size());
                 System.out.println(thread1List.size());
-                countmob++;
+                if (countmob>0){
+                    countmob++;
+                }
+
             }
         });
 

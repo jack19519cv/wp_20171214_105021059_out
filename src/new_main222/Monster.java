@@ -25,7 +25,7 @@ public class Monster extends JPanel implements Runnable {
     private ImageIcon stand[]=new ImageIcon[6];
     private boolean up,down,right,left,att=false;
     private JLabel jlb=new JLabel();
-    private JLabel jlbHp=new JLabel("1000000");
+    private JLabel jlbHp=new JLabel("10");
     private JLabel jlbName=new JLabel("惡水靈");
     private  Dimension place = new Dimension(50,30);
    // private ImageIcon[][] imgIcon={{new ImageIcon("slimetest/slime1.png")},{new ImageIcon("slimetest/slime.png")}};
@@ -61,15 +61,17 @@ private  boolean Flag = true;
        // y=390;
         y=340;
 //        r=rand.nextInt(6);
-        r=1;
+        r=rand.nextInt(2);
 
        // setMobAnimal();
         if(r==1){
             this.Flag=false;
+        }else {
+            this.Flag=true;
         }
        // this.setIcon(imgIcon[r][r1=rand.nextInt(1)]);
-       this.setBounds(x,y,120,170);//panel大小
-jlbHp.setSize(place);
+       this.setBounds(x,y,90,150);//panel大小
+        jlbHp.setSize(place);
         jlbName.setSize(place);
         this.add(jlbHp);
         this.add(jlb);
@@ -183,8 +185,8 @@ jlbHp.setSize(place);
     t1 = new Timer(250, new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
-            r1 = rand.nextInt(60000);
-            if (r1 > 10000) {
+            r1 = rand.nextInt(500);
+            if (r1 >250) {
 
             } else {
                 // walk1.stop();

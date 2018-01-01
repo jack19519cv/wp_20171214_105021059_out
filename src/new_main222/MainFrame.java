@@ -146,9 +146,10 @@ jbtnDel.setFocusable(false);
         jpn.add(new Monster(1000,1000));//走的寬度
 
         jlyPane.add(jpn.get(jpn.size()-1), JLayeredPane.PALETTE_LAYER,new Integer(103));
-
+                jlyPane.repaint();
         thread1List.add(new Thread(jpn.get(jpn.size()-1)));
         thread1List.get(thread1List.size()-1).start();
+
                 System.out.println(jpn.size());
                 System.out.println(thread1List.size());
 
@@ -165,7 +166,7 @@ jbtnDel.setFocusable(false);
               //  jpn.remove(jpn.get(jpn.size()-countmob));
                 jlyPane.remove(jpn.get(jpn.size()-countmob));
                 //thread1List.add(new Thread(jpn.get(jpn.size()-1)));
-                jlyPane.repaint();  
+                jlyPane.repaint();
                 thread1List.remove(thread1List.size()-1);
                 System.out.println("jpn:"+jpn.size());
                 System.out.println("thread:"+thread1List.size());

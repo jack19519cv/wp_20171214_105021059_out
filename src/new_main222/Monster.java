@@ -260,6 +260,7 @@ t1.start();
         Graphics2D g2d=(Graphics2D) g;
         super.paintComponent(g);
         g2d.drawImage(image,0,0,null);
+            Monster.this.repaint();
     }
 }
 

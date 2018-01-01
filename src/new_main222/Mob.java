@@ -72,6 +72,7 @@ public class Mob extends JLabel {
         Graphics2D g2d=(Graphics2D) g;
         super.paintComponent(g);
         g2d.drawImage(image,getX(),getY(),null);
+
     }
     private  void  setMobAnimal(){
         for(int i=0;i<3;i++){

@@ -46,6 +46,8 @@ public class  MainFrame extends JFrame {
     private JLabel floorlb=new JLabel();
     private JLabel lb=new JLabel();
     private JButton jbtnAdd= new JButton("ADD"); //test
+    private JButton jbtnDel= new JButton("Del"); //test
+  private int countmob=1;
     //Mob monster =new Mob();
     private  int imgW, imgH;
     private  int mx, my;
@@ -126,9 +128,13 @@ public class  MainFrame extends JFrame {
         testPane.setOpaque(false);
 //        testPane.setBackground(new Color(255, 69, 154));
         jlyPane.add(testPane, JLayeredPane.PALETTE_LAYER,new Integer(103));
-        //add btn
+        //加按鈕 add btn
         jbtnAdd.setBounds(0,0,1000,20);
         jlyPane.add(jbtnAdd,JLayeredPane.PALETTE_LAYER,new  Integer(103));
+jbtnAdd.setFocusable(false);
+jbtnDel.setFocusable(false);
+        jbtnDel.setBounds(0,20,1000,20);
+        jlyPane.add(jbtnDel,JLayeredPane.PALETTE_LAYER,new  Integer(103));
         //建立MOB
       //  jpn.setLayout(new GridLayout(1,1,5,5));
 
@@ -138,13 +144,29 @@ public class  MainFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
         jpn.add(new Monster(1000,1000));
-      // jpn.add(MonsterList.get(MonsterList.size()-1));
-//                jpn.add(MonsterList.get(MonsterList.size()-1));
-//                threadList.add(new Thread(MonsterList.get(MonsterList.size()-1)));
-//                threadList.get(threadList.size()-1).start();
+
         jlyPane.add(jpn.get(jpn.size()-1), JLayeredPane.PALETTE_LAYER,new Integer(103));
+
         thread1List.add(new Thread(jpn.get(jpn.size()-1)));
         thread1List.get(thread1List.size()-1).start();
+                System.out.println(jpn.size());
+                System.out.println(thread1List.size());
+countmob=1;
+    }
+});
+
+        jbtnDel.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //jpn.add(new Monster(1000,1000));
+              //  jpn.remove(jpn.get(jpn.size()-countmob));
+                jlyPane.remove(jpn.get(jpn.size()-countmob));
+                //thread1List.add(new Thread(jpn.get(jpn.size()-1)));
+
+                thread1List.remove(thread1List.size()-1);
+                System.out.println(jpn.size());
+                System.out.println(thread1List.size());
+                countmob++;
             }
         });
 

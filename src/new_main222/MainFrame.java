@@ -151,9 +151,9 @@ jbtnDel.setFocusable(false);
         thread1List.get(thread1List.size()-1).start();
                 System.out.println(jpn.size());
                 System.out.println(thread1List.size());
-                if (countmob>0){
+
                     countmob=1;
-                }
+
 
     }
 });
@@ -165,10 +165,10 @@ jbtnDel.setFocusable(false);
               //  jpn.remove(jpn.get(jpn.size()-countmob));
                 jlyPane.remove(jpn.get(jpn.size()-countmob));
                 //thread1List.add(new Thread(jpn.get(jpn.size()-1)));
-
+                jlyPane.repaint();  
                 thread1List.remove(thread1List.size()-1);
-                System.out.println(jpn.size());
-                System.out.println(thread1List.size());
+                System.out.println("jpn:"+jpn.size());
+                System.out.println("thread:"+thread1List.size());
                 if (countmob>0){
                     countmob++;
                 }

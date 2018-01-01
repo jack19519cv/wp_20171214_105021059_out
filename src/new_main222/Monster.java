@@ -255,12 +255,12 @@ t1.start();
     public int gety(){
         return y;
     }
-        @Override
-    protected  void paintComponent(Graphics g){
-        Graphics2D g2d=(Graphics2D) g;
-        super.paintComponent(g);
-        g2d.drawImage(image,0,0,null);
-            Monster.this.repaint();
-    }
+//        @Override
+//    protected  void paintComponent(Graphics g){
+//        Graphics2D g2d=(Graphics2D) g;
+//        super.paintComponent(g);
+//        g2d.drawImage(image,0,0,null);
+//            Monster.this.repaint();
+//    }
 }
 

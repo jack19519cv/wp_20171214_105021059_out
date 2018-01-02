@@ -14,6 +14,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import static java.lang.Integer.parseInt;
+
 public class  MainFrame extends JFrame {
     private ImageIcon alert[]=new ImageIcon[6];
     private ImageIcon jump[]=new ImageIcon[2];
@@ -47,7 +49,11 @@ public class  MainFrame extends JFrame {
     private JLabel lb=new JLabel();
     private JButton jbtnAdd= new JButton("ADD"); //test
     private JButton jbtnDel= new JButton("Del"); //test
+    private JButton jbtnhit= new JButton("hit"); //test
+    private JButton jbtnhitmovie= new JButton("hit_movie"); //test
+
   private int countmob=1;
+    private JTextField jtf = new JTextField();
     //Mob monster =new Mob();
     private  int imgW, imgH;
     private  int mx, my;
@@ -127,14 +133,19 @@ public class  MainFrame extends JFrame {
         threadList.get(0).start();
         testPane.setOpaque(false);
 //        testPane.setBackground(new Color(255, 69, 154));
-        jlyPane.add(testPane, JLayeredPane.PALETTE_LAYER,new Integer(103));
-        //加按鈕 add btn
+      //  jlyPane.add(testPane, JLayeredPane.PALETTE_LAYER,new Integer(103));
+
+        //加按鈕 add btn and texafilld
         jbtnAdd.setBounds(0,0,1000,20);
         jlyPane.add(jbtnAdd,JLayeredPane.PALETTE_LAYER,new  Integer(103));
-jbtnAdd.setFocusable(false);
-jbtnDel.setFocusable(false);
         jbtnDel.setBounds(0,20,1000,20);
         jlyPane.add(jbtnDel,JLayeredPane.PALETTE_LAYER,new  Integer(103));
+        jtf.setBounds(0,60,1000,30);
+        jlyPane.add(jtf,JLayeredPane.PALETTE_LAYER,new  Integer(103));
+        jbtnAdd.setFocusable(false);
+        jbtnDel.setFocusable(false);
+
+        jtf.setText(Integer.toString(countmob));
         //建立MOB
       //  jpn.setLayout(new GridLayout(1,1,5,5));
 
@@ -145,15 +156,14 @@ jbtnDel.setFocusable(false);
             public void actionPerformed(ActionEvent e) {
         jpn.add(new Monster(1000,1000));//走的寬度
 
-        jlyPane.add(jpn.get(jpn.size()-1), JLayeredPane.PALETTE_LAYER,new Integer(103));
+        jlyPane.add(jpn.get(jpn.size()-1),new Integer(103));
                 jlyPane.repaint();
         thread1List.add(new Thread(jpn.get(jpn.size()-1)));
         thread1List.get(thread1List.size()-1).start();
+                System.out.println("jpn:"+jpn.size());
+                System.out.println("thread:"+thread1List.size());
 
-                System.out.println(jpn.size());
-                System.out.println(thread1List.size());
 
-                    countmob=1;
 
 
     }
@@ -163,19 +173,19 @@ jbtnDel.setFocusable(false);
             @Override
             public void actionPerformed(ActionEvent e) {
                 //jpn.add(new Monster(1000,1000));
-              //  jpn.remove(jpn.get(jpn.size()-countmob));
-                jlyPane.remove(jpn.get(jpn.size()-countmob));
+
+                jlyPane.remove(jpn.get(jpn.size()-parseInt(jtf.getText())));
                 //thread1List.add(new Thread(jpn.get(jpn.size()-1)));
                 jlyPane.repaint();
-                thread1List.remove(thread1List.size()-1);
+                thread1List.remove(thread1List.size()-parseInt(jtf.getText()));
+                jpn.remove(jpn.size()-countmob);
                 System.out.println("jpn:"+jpn.size());
                 System.out.println("thread:"+thread1List.size());
-                if (countmob>0){
-                    countmob++;
-                }
+
 
             }
         });
+
 
 //        thread1List.get(1).start();
 

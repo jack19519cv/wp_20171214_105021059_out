@@ -13,7 +13,7 @@ import java.util.Random;
 /**
  * Created by jackwang on 2017/12/14.
  */
-public class Monster extends JPanel implements Runnable {
+public  class Monster extends JPanel implements Runnable {
 
     private BufferedImage image;
     // private Image image;
@@ -23,23 +23,30 @@ public class Monster extends JPanel implements Runnable {
     private ImageIcon jump[]=new ImageIcon[3];
     private ImageIcon walk[]=new ImageIcon[6];
     private ImageIcon stand[]=new ImageIcon[6];
+    private ImageIcon die[]=new ImageIcon[6];
     private boolean up,down,right,left,att=false;
     private JLabel jlb=new JLabel();
-    private JLabel jlbHp=new JLabel("10");
+    private JLabel jlbHp=new JLabel("0");
     private JLabel jlbName=new JLabel("惡水靈");
     private  Dimension place = new Dimension(50,30);
    // private ImageIcon[][] imgIcon={{new ImageIcon("slimetest/slime1.png")},{new ImageIcon("slimetest/slime.png")}};
 private  boolean Flag = true;
     private  Timer t1;
     private  Timer walkT;
-    private  Timer walk1;
+    private  Timer dieT;
     private  Timer standT;
+    private  Timer deathcountT;
+    private boolean d = false;
+    private  int nowHp;
     private Random rand = new Random();
 
   private  Mob mob;
-    public Monster(int frmH, int frmW ){
-        this.setLayout(new GridLayout(3,1,0,0));
+  //frmW=移動範圍 d=diestatus
+    public  Monster(int frmH, int frmW,boolean d ){
 
+        this.setLayout(new GridLayout(3,1,0,0));
+        this.d=d;
+        this.nowHp=nowHp;
         setMobAnimal();
       //  this.setOpaque(false);
 //        try{
@@ -70,13 +77,34 @@ private  boolean Flag = true;
             this.Flag=true;
         }
        // this.setIcon(imgIcon[r][r1=rand.nextInt(1)]);
-       this.setBounds(x,y,90,150);//panel大小
+       this.setBounds(x,y,90,180);//panel大小
         jlbHp.setSize(place);
         jlbName.setSize(place);
         this.add(jlbHp);
         this.add(jlb);
         
         this.add(jlbName);
+        deathcountT = new Timer(250, new ActionListener() {
+            int count=0;
+            @Override
+            public void actionPerformed(ActionEvent e) {
+           if(count<3){
+               jlb.setIcon(die[count % 3+3]);
+
+
+           }
+
+
+            }
+        });
+
+    }
+
+    private void setdead(boolean d){
+       this.d=d;
+    }
+    public   boolean getdead(){
+        return d;
     }
     @Override
     public  void run(){
@@ -182,24 +210,70 @@ private  boolean Flag = true;
         }
 
     });
-    t1 = new Timer(250, new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            r1 = rand.nextInt(500);
-            if (r1 >250) {
 
+
+dieT =new Timer(250, new ActionListener() {
+    int t1Tmp = 0;
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (t1Tmp < 3) {
+            if (r == 1) {
+                jlb.setIcon(die[t1Tmp % 3 + 3]);
+
+                left = true;
+                t1Tmp++;
+                if (t1Tmp == 6) {
+                    dieT.stop();
+                    t1Tmp = 0;
+                    setdead(true);
+                }
+                // Monster.this.repaint();
             } else {
-                // walk1.stop();
+                jlb.setIcon(die[t1Tmp % 3]);
+                right = true;
+                t1Tmp++;
+                if (t1Tmp == 6) {
+                    dieT.stop();
+                    t1Tmp = 0;
+                    setdead(true);
+                }
+
+            }
+        }else{
+
+        }
+    }
+
+});
+        t1 = new Timer(250, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                r1 = rand.nextInt(30000);
+                if (r1 >15000) {
+
+                } else {
+                    // walk1.stop();
+                    walkT.stop();
+                    standT.start();
+                }
+            }
+        });
+
+
+        while (true) {
+
+            if (jlbHp.getText().equals("0")) {
+                setdead(true);
                 walkT.stop();
-                standT.start();
+                standT.stop();
+                dieT.start();
+
+            }else {
+                t1.start();
             }
         }
-    });
 
 
-
-
-t1.start();
 
 
 }
@@ -231,7 +305,7 @@ t1.start();
 
         }
 
-        for(int i=0;i<3;i++) {
+              for(int i=0;i<3;i++) {
 
             stand[i] = new ImageIcon("Slime/stand/left/stand." + Integer.toString(i) + ".png");
 
@@ -240,6 +314,18 @@ t1.start();
         for(int  i=3;i<6;i++) {
 
             stand[i]=new ImageIcon("Slime/stand/right/stand."+Integer.toString(i-3)+".png");
+
+        }
+
+        for(int i=0;i<3;i++) {
+
+            die[i] = new ImageIcon("Slime/die/left/die." + Integer.toString(i) + ".png");
+
+        }
+
+        for(int  i=3;i<6;i++) {
+
+            die[i]=new ImageIcon("Slime/die/right/die."+Integer.toString(i-3)+".png");
 
         }
 
@@ -264,5 +350,6 @@ t1.start();
 //        g2d.drawImage(image,0,0,null);
 //            Monster.this.repaint();
 //    }
+
 }
 

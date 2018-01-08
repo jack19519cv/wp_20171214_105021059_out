@@ -51,13 +51,13 @@ public class  MainFrame extends JFrame {
     private JButton jbtnDel= new JButton("Del"); //test
     private JButton jbtnhit= new JButton("hit"); //test
     private JButton jbtnhitmovie= new JButton("hit_movie"); //test
+    private int damage = 2;
 
   private int countmob=1;
     private JTextField jtf = new JTextField();
     //Mob monster =new Mob();
     private  int imgW, imgH;
     private  int mx, my;
-
    // private ImagePanel jpn= new ImagePanel();
 //    private JPanel background=new JPanel();
 //    private CharacterT CharacterT=new CharacterT(alert,jump,walk,stand,"alert",0);
@@ -150,11 +150,16 @@ public class  MainFrame extends JFrame {
       //  jpn.setLayout(new GridLayout(1,1,5,5));
 
 //jpn.setBounds(0,0,20,1000);
-
+mbadd();
+mbadd();
+mbadd();
+mbadd();
+mbadd();
         jbtnAdd.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-        jpn.add(new Monster(1000,1000));//走的寬度
+
+        jpn.add(new Monster(1000,800,false));//走的寬度
 
         jlyPane.add(jpn.get(jpn.size()-1),new Integer(103));
                 jlyPane.repaint();
@@ -169,23 +174,32 @@ public class  MainFrame extends JFrame {
     }
 });
 
+
+
         jbtnDel.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //jpn.add(new Monster(1000,1000));
 
+                if(jpn.get(0).getdead()){
                 jlyPane.remove(jpn.get(jpn.size()-parseInt(jtf.getText())));
                 //thread1List.add(new Thread(jpn.get(jpn.size()-1)));
                 jlyPane.repaint();
                 thread1List.remove(thread1List.size()-parseInt(jtf.getText()));
+                ;
                 jpn.remove(jpn.size()-countmob);
                 System.out.println("jpn:"+jpn.size());
                 System.out.println("thread:"+thread1List.size());
-
+                }
 
             }
         });
+jbtnhit.addActionListener(new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent e) {
 
+    }
+});
 
 //        thread1List.get(1).start();
 
@@ -614,10 +628,39 @@ public class  MainFrame extends JFrame {
 //
 //        }
     }
+    public int  getDamage(int damage){
+
+       return damage;
+    }
+    public void mbremove(){
+
+        if(jpn.get(0).getdead()){
+            jlyPane.remove(jpn.get(jpn.size()-parseInt(jtf.getText())));
+            //thread1List.add(new Thread(jpn.get(jpn.size()-1)));
+            jlyPane.repaint();
+            thread1List.remove(thread1List.size()-parseInt(jtf.getText()));
+            ;
+            jpn.remove(jpn.size()-countmob);
+            System.out.println("jpn:"+jpn.size());
+            System.out.println("thread:"+thread1List.size());
+        }
+    }
+    public  void mbadd(){
+
+        jpn.add(new Monster(1000,800,false));//走的寬度
+
+        jlyPane.add(jpn.get(jpn.size()-1),new Integer(103));
+        jlyPane.repaint();
+        thread1List.add(new Thread(jpn.get(jpn.size()-1)));
+        thread1List.get(thread1List.size()-1).start();
+        System.out.println("jpn:"+jpn.size());
+        System.out.println("thread:"+thread1List.size());
+    }
 //    public void imgAminal(int start,int end,boolean charface){
 //        for(){}
 //
 //    }
+
 }
 
 

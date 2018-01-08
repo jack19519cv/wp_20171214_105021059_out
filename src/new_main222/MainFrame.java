@@ -51,8 +51,8 @@ public class  MainFrame extends JFrame {
     private JButton jbtnDel= new JButton("Del"); //test
     private JButton jbtnhit= new JButton("hit"); //test
     private JButton jbtnhitmovie= new JButton("hit_movie"); //test
-    private int damage = 2;
-
+    private Mob OX= new Mob(1000,1000);
+    private ArrayList<Thread> threadListMob = new ArrayList<Thread>();
   private int countmob=1;
     private JTextField jtf = new JTextField();
     //Mob monster =new Mob();
@@ -200,6 +200,9 @@ jbtnhit.addActionListener(new ActionListener() {
 
     }
 });
+        threadListMob.add(new Thread(OX));
+        threadListMob.get(0).start();
+        jlyPane.add(OX,new  Integer(103));
 
 //        thread1List.get(1).start();
 

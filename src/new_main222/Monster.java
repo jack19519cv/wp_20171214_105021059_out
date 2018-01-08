@@ -39,8 +39,6 @@ private  boolean Flag = true;
     private boolean d = false;
     private  int nowHp;
     private Random rand = new Random();
-
-  private  Mob mob;
   //frmW=移動範圍 d=diestatus
     public  Monster(int frmH, int frmW,boolean d ){
 
@@ -48,16 +46,6 @@ private  boolean Flag = true;
         this.d=d;
         this.nowHp=nowHp;
         setMobAnimal();
-      //  this.setOpaque(false);
-//        try{
-//            image= ImageIO.read(new File("Slime/walk/left/move.1.png"));
-//            // imgW= image.getWidth();
-//            imgW= image.getWidth();
-//            imgH = image.getHeight();
-//            // imgH = 500;
-//        }catch(IOException ie){
-//            ie.printStackTrace();
-//        }
         this.frmH= frmH;
         this.frmW = frmW;
         this.setOpaque(false);
@@ -110,9 +98,7 @@ private  boolean Flag = true;
     public  void run(){
 
     walkT = new Timer(125/*走路速度*/, new ActionListener() {
-
         int t1Tmp = 0;
-
         @Override
         public void actionPerformed(ActionEvent e) {
             if (Monster.this.Flag) {

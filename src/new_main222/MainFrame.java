@@ -137,13 +137,16 @@ public class  MainFrame extends JFrame {
 
         //加按鈕 add btn and texafilld
         jbtnAdd.setBounds(0,0,1000,20);
-        jlyPane.add(jbtnAdd,JLayeredPane.PALETTE_LAYER,new  Integer(103));
+        jlyPane.add(jbtnAdd,new  Integer(103));
         jbtnDel.setBounds(0,20,1000,20);
-        jlyPane.add(jbtnDel,JLayeredPane.PALETTE_LAYER,new  Integer(103));
+        jlyPane.add(jbtnDel,new  Integer(103));
         jtf.setBounds(0,60,1000,30);
-        jlyPane.add(jtf,JLayeredPane.PALETTE_LAYER,new  Integer(103));
+        jlyPane.add(jtf,new  Integer(103));
+        jbtnhit.setBounds(0,40,1000,20);
+        jlyPane.add(jbtnhit,new  Integer(103));
         jbtnAdd.setFocusable(false);
         jbtnDel.setFocusable(false);
+        jbtnhit.setFocusable(false);
 
         jtf.setText(Integer.toString(countmob));
         //建立MOB
@@ -181,7 +184,7 @@ mbadd();
             public void actionPerformed(ActionEvent e) {
                 //jpn.add(new Monster(1000,1000));
 
-                if(jpn.get(0).getdead()){
+                if(jpn.get(countmob).getdead()){
                 jlyPane.remove(jpn.get(jpn.size()-parseInt(jtf.getText())));
                 //thread1List.add(new Thread(jpn.get(jpn.size()-1)));
                 jlyPane.repaint();
@@ -198,6 +201,7 @@ jbtnhit.addActionListener(new ActionListener() {
     @Override
     public void actionPerformed(ActionEvent e) {
 
+    jpn.get(parseInt(jtf.getText())).gethit();
     }
 });
         threadListMob.add(new Thread(OX));

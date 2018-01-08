@@ -89,16 +89,22 @@ public class Mob extends JLabel  implements Runnable {
                     }
                     Mob.this.setLocation(x, y);
                 }
+
             }
         });
-        standT = new Timer(700, new ActionListener() {
+        standT = new Timer(500, new ActionListener() {
             int t1Tmp = 0;
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (r == 1) {
                     Mob.this.setIcon(stand[t1Tmp % 11+11]);
                     t1Tmp++;
+                    if(t1Tmp==22){
+                        standT.stop();
 
+                        walkT.start();
+                        t1Tmp=0;
+                    }
 
 
                     // Monster.this.repaint();
@@ -106,7 +112,12 @@ public class Mob extends JLabel  implements Runnable {
                     Mob.this.setIcon(stand[t1Tmp % 11]);
 
                     t1Tmp++;
+                    if(t1Tmp==22){
+                        standT.stop();
 
+                        walkT.start();
+                        t1Tmp=0;
+                    }
 
 
                 }
@@ -115,15 +126,10 @@ public class Mob extends JLabel  implements Runnable {
             }
 
         });
-        t1 = new Timer(250, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                walkT.start();
-            }
-        });
 
 
-t1.start();
+
+        walkT.start();
 
     }
 
@@ -142,7 +148,7 @@ t1.start();
         for(int i=0;i<8;i++){
             walk[i]=new ImageIcon("ox/move/left/move."+Integer.toString(i)+".png");
         }
-        for(int i=8;i<12;i++){
+        for(int i=8;i<16;i++){
             walk[i]=new ImageIcon("ox/move/right/move."+Integer.toString(i-8)+".png");
         }
         for(int i=0;i<11;i++) {

@@ -20,13 +20,13 @@ public  class Monster extends JPanel implements Runnable {
     private  int imgW, imgH;
     private  int frmH,frmW,r1,r;
     private int x,y=0;
-    private ImageIcon jump[]=new ImageIcon[3];
+    private ImageIcon hit[]=new ImageIcon[2];
     private ImageIcon walk[]=new ImageIcon[6];
     private ImageIcon stand[]=new ImageIcon[6];
     private ImageIcon die[]=new ImageIcon[6];
     private boolean up,down,right,left,att=false;
     private JLabel jlb=new JLabel();
-    private JLabel jlbHp=new JLabel("0");
+    private JLabel jlbHp=new JLabel("10");
     private JLabel jlbName=new JLabel("惡水靈");
     private  Dimension place = new Dimension(50,30);
    // private ImageIcon[][] imgIcon={{new ImageIcon("slimetest/slime1.png")},{new ImageIcon("slimetest/slime.png")}};
@@ -35,10 +35,12 @@ private  boolean Flag = true;
     private  Timer walkT;
     private  Timer dieT;
     private  Timer standT;
-    private  Timer deathcountT;
+    private  Timer hitT;
     private boolean d = false;
     private  int nowHp;
     private Random rand = new Random();
+    private int damage=10;
+    private boolean hitstatus=false;
   //frmW=移動範圍 d=diestatus
     public  Monster(int frmH, int frmW,boolean d ){
 
@@ -53,8 +55,8 @@ private  boolean Flag = true;
         jlbName.setForeground(Color.orange);
         x=rand.nextInt(frmW);
         //y=rand.nextInt(frmH-100);
-       // y=390;
-        y=340;
+        y=385;
+       // y=340;
 //        r=rand.nextInt(6);
         r=rand.nextInt(2);
 
@@ -65,26 +67,14 @@ private  boolean Flag = true;
             this.Flag=true;
         }
        // this.setIcon(imgIcon[r][r1=rand.nextInt(1)]);
-       this.setBounds(x,y,90,180);//panel大小
+       this.setBounds(x,y,90,200);//panel大小
         jlbHp.setSize(place);
         jlbName.setSize(place);
         this.add(jlbHp);
         this.add(jlb);
         
-        this.add(jlbName);
-        deathcountT = new Timer(250, new ActionListener() {
-            int count=0;
-            @Override
-            public void actionPerformed(ActionEvent e) {
-           if(count<3){
-               jlb.setIcon(die[count % 3+3]);
+       // this.add(jlbName);
 
-
-           }
-
-
-            }
-        });
 
     }
 
@@ -93,6 +83,58 @@ private  boolean Flag = true;
     }
     public   boolean getdead(){
         return d;
+    }
+    public int gethit(){
+hitstatus=true;
+        if(!d) {
+            hitT = new Timer(500, new ActionListener() {
+                int hitcount = 0;
+
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if (hitcount < 1) {
+                        if (r == 1) {
+                            jlb.setIcon(hit[1]);
+
+                            left = true;
+                            hitcount++;
+                            if (hitcount == 2) {
+                                hitT.stop();
+
+//                            walkT.start();
+                                hitcount = 0;
+                                hitstatus = false;
+                            }
+                            // Monster.this.repaint();
+                        } else {
+                            jlb.setIcon(hit[0]);
+                            right = true;
+                            hitcount++;
+                            if (hitcount == 2) {
+                                hitT.stop();
+
+//                            walkT.start();
+                                hitcount = 0;
+                                hitstatus = false;
+                            }
+
+                        }
+
+                        setDamage();
+                    }
+                }
+            });
+        }
+        hitT.start();
+
+        return 1;
+    }
+    public void setDamage(){
+        if(damage>0) {
+            damage--;
+            jlbHp.setText(Integer.toString(damage));
+        }
+
     }
     @Override
     public  void run(){
@@ -225,8 +267,6 @@ dieT =new Timer(250, new ActionListener() {
                 }
 
             }
-        }else{
-
         }
     }
 
@@ -247,16 +287,25 @@ dieT =new Timer(250, new ActionListener() {
 
 
         while (true) {
-
             if (jlbHp.getText().equals("0")) {
                 setdead(true);
                 walkT.stop();
                 standT.stop();
                 dieT.start();
 
-            }else {
+
+            }else if(hitstatus){
+                standT.setDelay(600);
+                walkT.setDelay(600);
+                t1.setDelay(600);
+
+
+            }
+            else{
                 t1.start();
             }
+
+
         }
 
 
@@ -279,15 +328,15 @@ dieT =new Timer(250, new ActionListener() {
 
         }
 
-        for(int i=0;i<3;i++) {
+        for(int i=0;i<1;i++) {
 
-            jump[i] = new ImageIcon("Slime/jump/left/move." + Integer.toString(i) + ".png");
+            hit[i] = new ImageIcon("Slime/die/left/hit." + Integer.toString(i) + ".png");
 
         }
 
-        for(int i=0;i<3;i++) {
+        for(int i=1;i<2;i++) {
 
-            jump[i]=new ImageIcon("Slime/jump/right/move."+Integer.toString(i-3)+".png");
+            hit[i]=new ImageIcon("Slime/die/right/hit."+Integer.toString(i-1)+".png");
 
         }
 
@@ -321,6 +370,7 @@ dieT =new Timer(250, new ActionListener() {
 
     public  int getImgWidth(){return imgW;}
     public int getImgHeight(){
+
         return imgH;
     }
     public  int getx(){

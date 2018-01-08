@@ -2,55 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09c4b94e-adb7-4082-946c-6606f79738dc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/hit1.0.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/left/move.0.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/left/move.1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/left/move.2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/left/move.3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/left/move.4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/left/move.5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/left/move.6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/left/move.7.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/right/move.0.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/right/move.1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/right/move.2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/right/move.3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/right/move.4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/right/move.5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/right/move.6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move/right/move.7.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.0.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.10.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.7.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.8.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/left/stand.9.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.0.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.10.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.6.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.7.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.8.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ox/stand/right/stand.9.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move.0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move.1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move.2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/move.3.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$10.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$10.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$11.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$11.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$4.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$4.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$5.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$5.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$6.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$6.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$7.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$7.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$8.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$8.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$9.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$9.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$2.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$2.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob$1.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob$2.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob$3.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$1.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$2.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$2.class" />
@@ -58,6 +19,14 @@
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$4.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$4.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$5.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$5.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster.class" />
+      <change beforePath="$PROJECT_DIR$/ox/move/right/move.0.png" afterPath="$PROJECT_DIR$/ox/move/right/move.0.png" />
+      <change beforePath="$PROJECT_DIR$/ox/move/right/move.1.png" afterPath="$PROJECT_DIR$/ox/move/right/move.1.png" />
+      <change beforePath="$PROJECT_DIR$/ox/move/right/move.2.png" afterPath="$PROJECT_DIR$/ox/move/right/move.2.png" />
+      <change beforePath="$PROJECT_DIR$/ox/move/right/move.3.png" afterPath="$PROJECT_DIR$/ox/move/right/move.3.png" />
+      <change beforePath="$PROJECT_DIR$/ox/move/right/move.4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ox/move/right/move.5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ox/move/right/move.6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/ox/move/right/move.7.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/new_main222/MainFrame.java" afterPath="$PROJECT_DIR$/src/new_main222/MainFrame.java" />
       <change beforePath="$PROJECT_DIR$/src/new_main222/Mob.java" afterPath="$PROJECT_DIR$/src/new_main222/Mob.java" />
       <change beforePath="$PROJECT_DIR$/src/new_main222/Monster.java" afterPath="$PROJECT_DIR$/src/new_main222/Monster.java" />
@@ -72,21 +41,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-575">
-              <caret line="165" column="38" lean-forward="true" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+            <state relative-caret-position="419">
+              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
               <folding>
                 <element signature="e#830#841#0" expanded="true" />
                 <element signature="e#894#903#0" expanded="true" />
                 <element signature="e#963#971#0" expanded="true" />
                 <element signature="e#1032#1040#0" expanded="true" />
                 <element signature="e#2112#2120#0" expanded="true" />
-                <element signature="e#5978#6477#0" expanded="true" />
-                <element signature="e#6476#6477#0" expanded="true" />
-                <element signature="e#6517#7205#0" expanded="true" />
-                <element signature="e#7204#7205#0" expanded="true" />
+                <element signature="e#6023#6522#0" expanded="true" />
+                <element signature="e#6521#6522#0" expanded="true" />
+                <element signature="e#6562#7257#0" expanded="true" />
+                <element signature="e#7256#7257#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,32 +74,20 @@
       <file leaf-file-name="Monster.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="165" column="3" lean-forward="false" selection-start-line="165" selection-start-column="3" selection-end-line="197" selection-end-column="7" />
+            <state relative-caret-position="-1281">
+              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
-                <element signature="e#2536#2537#0" expanded="true" />
-                <element signature="e#2559#2560#0" expanded="true" />
-                <element signature="e#2591#2592#0" expanded="true" />
-                <element signature="e#2615#2616#0" expanded="true" />
-                <element signature="e#7922#7923#0" expanded="true" />
-                <element signature="e#7949#7950#0" expanded="true" />
-                <element signature="e#7973#7974#0" expanded="true" />
-                <element signature="e#7997#7998#0" expanded="true" />
-                <element signature="e#8020#8021#0" expanded="true" />
-                <element signature="e#8044#8045#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mob.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/new_main222/Mob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-              <folding>
-                <element signature="e#3318#3319#0" expanded="true" />
-                <element signature="e#3363#3364#0" expanded="true" />
+                <element signature="e#2319#2320#0" expanded="true" />
+                <element signature="e#2342#2343#0" expanded="true" />
+                <element signature="e#2374#2375#0" expanded="true" />
+                <element signature="e#2398#2399#0" expanded="true" />
+                <element signature="method#actionPerformed#0;class#3999:5238" expanded="false" />
+                <element signature="method#actionPerformed#0;class#5747:6562" expanded="false" />
+                <element signature="method#actionPerformed#0;class#7382:7729" expanded="false" />
+                <element signature="e#9414#9415#0" expanded="true" />
+                <element signature="e#9438#9439#0" expanded="true" />
+                <element signature="e#9461#9462#0" expanded="true" />
+                <element signature="e#9485#9486#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,9 +113,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/new_main222/Main.java" />
+        <option value="$PROJECT_DIR$/src/new_main222/Mob.java" />
         <option value="$PROJECT_DIR$/src/new_main222/Monster.java" />
         <option value="$PROJECT_DIR$/src/new_main222/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/new_main222/Mob.java" />
       </list>
     </option>
   </component>
@@ -193,26 +150,26 @@
             <path>
               <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp_20171214_105021059_out" type="462c0819:PsiDirectoryNode" />
-              <item name="ox" type="462c0819:PsiDirectoryNode" />
+              <item name="Slime" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp_20171214_105021059_out" type="462c0819:PsiDirectoryNode" />
-              <item name="ox" type="462c0819:PsiDirectoryNode" />
-              <item name="move" type="462c0819:PsiDirectoryNode" />
+              <item name="Slime" type="462c0819:PsiDirectoryNode" />
+              <item name="die" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp_20171214_105021059_out" type="462c0819:PsiDirectoryNode" />
-              <item name="ox" type="462c0819:PsiDirectoryNode" />
-              <item name="move" type="462c0819:PsiDirectoryNode" />
+              <item name="Slime" type="462c0819:PsiDirectoryNode" />
+              <item name="die" type="462c0819:PsiDirectoryNode" />
               <item name="left" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp_20171214_105021059_out" type="462c0819:PsiDirectoryNode" />
-              <item name="ox" type="462c0819:PsiDirectoryNode" />
-              <item name="move" type="462c0819:PsiDirectoryNode" />
+              <item name="Slime" type="462c0819:PsiDirectoryNode" />
+              <item name="die" type="462c0819:PsiDirectoryNode" />
               <item name="right" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,6 +199,11 @@
     </panes>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\Slime\die\left" />
+      <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\Slime" />
+      <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\ox" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\ox\move" />
       <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out" />
@@ -338,7 +300,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -348,18 +309,18 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.070562296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13009922" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39911798" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10253583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -388,10 +349,10 @@
             <element signature="e#963#971#0" expanded="true" />
             <element signature="e#1032#1040#0" expanded="true" />
             <element signature="e#2112#2120#0" expanded="true" />
-            <element signature="e#5978#6477#0" expanded="true" />
-            <element signature="e#6476#6477#0" expanded="true" />
-            <element signature="e#6517#7205#0" expanded="true" />
-            <element signature="e#7204#7205#0" expanded="true" />
+            <element signature="e#6023#6522#0" expanded="true" />
+            <element signature="e#6521#6522#0" expanded="true" />
+            <element signature="e#6562#7257#0" expanded="true" />
+            <element signature="e#7256#7257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -409,16 +370,17 @@
         <state relative-caret-position="4515">
           <caret line="227" column="1" lean-forward="false" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
           <folding>
-            <element signature="e#2536#2537#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#7922#7923#0" expanded="true" />
-            <element signature="e#7949#7950#0" expanded="true" />
-            <element signature="e#7973#7974#0" expanded="true" />
-            <element signature="e#7997#7998#0" expanded="true" />
-            <element signature="e#8020#8021#0" expanded="true" />
-            <element signature="e#8044#8045#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2342#2343#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#3999:5238" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5747:6562" expanded="false" />
+            <element signature="method#actionPerformed#0;class#7382:7729" expanded="false" />
+            <element signature="e#9414#9415#0" expanded="true" />
+            <element signature="e#9438#9439#0" expanded="true" />
+            <element signature="e#9461#9462#0" expanded="true" />
+            <element signature="e#9485#9486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -433,10 +395,10 @@
             <element signature="e#963#971#0" expanded="true" />
             <element signature="e#1032#1040#0" expanded="true" />
             <element signature="e#2112#2120#0" expanded="true" />
-            <element signature="e#5978#6477#0" expanded="true" />
-            <element signature="e#6476#6477#0" expanded="true" />
-            <element signature="e#6517#7205#0" expanded="true" />
-            <element signature="e#7204#7205#0" expanded="true" />
+            <element signature="e#6023#6522#0" expanded="true" />
+            <element signature="e#6521#6522#0" expanded="true" />
+            <element signature="e#6562#7257#0" expanded="true" />
+            <element signature="e#7256#7257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -454,16 +416,17 @@
         <state relative-caret-position="4515">
           <caret line="227" column="1" lean-forward="false" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
           <folding>
-            <element signature="e#2536#2537#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#7922#7923#0" expanded="true" />
-            <element signature="e#7949#7950#0" expanded="true" />
-            <element signature="e#7973#7974#0" expanded="true" />
-            <element signature="e#7997#7998#0" expanded="true" />
-            <element signature="e#8020#8021#0" expanded="true" />
-            <element signature="e#8044#8045#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2342#2343#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#3999:5238" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5747:6562" expanded="false" />
+            <element signature="method#actionPerformed#0;class#7382:7729" expanded="false" />
+            <element signature="e#9414#9415#0" expanded="true" />
+            <element signature="e#9438#9439#0" expanded="true" />
+            <element signature="e#9461#9462#0" expanded="true" />
+            <element signature="e#9485#9486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -478,10 +441,10 @@
             <element signature="e#963#971#0" expanded="true" />
             <element signature="e#1032#1040#0" expanded="true" />
             <element signature="e#2112#2120#0" expanded="true" />
-            <element signature="e#5978#6477#0" expanded="true" />
-            <element signature="e#6476#6477#0" expanded="true" />
-            <element signature="e#6517#7205#0" expanded="true" />
-            <element signature="e#7204#7205#0" expanded="true" />
+            <element signature="e#6023#6522#0" expanded="true" />
+            <element signature="e#6521#6522#0" expanded="true" />
+            <element signature="e#6562#7257#0" expanded="true" />
+            <element signature="e#7256#7257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -499,16 +462,17 @@
         <state relative-caret-position="1659">
           <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
           <folding>
-            <element signature="e#2536#2537#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#7922#7923#0" expanded="true" />
-            <element signature="e#7949#7950#0" expanded="true" />
-            <element signature="e#7973#7974#0" expanded="true" />
-            <element signature="e#7997#7998#0" expanded="true" />
-            <element signature="e#8020#8021#0" expanded="true" />
-            <element signature="e#8044#8045#0" expanded="true" />
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2342#2343#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#3999:5238" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5747:6562" expanded="false" />
+            <element signature="method#actionPerformed#0;class#7382:7729" expanded="false" />
+            <element signature="e#9414#9415#0" expanded="true" />
+            <element signature="e#9438#9439#0" expanded="true" />
+            <element signature="e#9461#9462#0" expanded="true" />
+            <element signature="e#9485#9486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -598,6 +562,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Monster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609">
+          <caret line="90" column="4" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/Mob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1281">
+          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="e#2319#2320#0" expanded="true" />
+            <element signature="e#2342#2343#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#3999:5238" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5747:6562" expanded="false" />
+            <element signature="method#actionPerformed#0;class#7382:7729" expanded="false" />
+            <element signature="e#9414#9415#0" expanded="true" />
+            <element signature="e#9438#9439#0" expanded="true" />
+            <element signature="e#9461#9462#0" expanded="true" />
+            <element signature="e#9485#9486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/new_main222/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -608,56 +608,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <caret line="165" column="38" lean-forward="true" selection-start-line="165" selection-start-column="38" selection-end-line="165" selection-end-column="38" />
+        <state relative-caret-position="419">
+          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
           <folding>
             <element signature="e#830#841#0" expanded="true" />
             <element signature="e#894#903#0" expanded="true" />
             <element signature="e#963#971#0" expanded="true" />
             <element signature="e#1032#1040#0" expanded="true" />
             <element signature="e#2112#2120#0" expanded="true" />
-            <element signature="e#5978#6477#0" expanded="true" />
-            <element signature="e#6476#6477#0" expanded="true" />
-            <element signature="e#6517#7205#0" expanded="true" />
-            <element signature="e#7204#7205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Monster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3129">
-          <caret line="90" column="4" lean-forward="false" selection-start-line="90" selection-start-column="4" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="165" column="3" lean-forward="false" selection-start-line="165" selection-start-column="3" selection-end-line="197" selection-end-column="7" />
-          <folding>
-            <element signature="e#2536#2537#0" expanded="true" />
-            <element signature="e#2559#2560#0" expanded="true" />
-            <element signature="e#2591#2592#0" expanded="true" />
-            <element signature="e#2615#2616#0" expanded="true" />
-            <element signature="e#7922#7923#0" expanded="true" />
-            <element signature="e#7949#7950#0" expanded="true" />
-            <element signature="e#7973#7974#0" expanded="true" />
-            <element signature="e#7997#7998#0" expanded="true" />
-            <element signature="e#8020#8021#0" expanded="true" />
-            <element signature="e#8044#8045#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/new_main222/Mob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-          <folding>
-            <element signature="e#3318#3319#0" expanded="true" />
-            <element signature="e#3363#3364#0" expanded="true" />
+            <element signature="e#6023#6522#0" expanded="true" />
+            <element signature="e#6521#6522#0" expanded="true" />
+            <element signature="e#6562#7257#0" expanded="true" />
+            <element signature="e#7256#7257#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -54,7 +54,7 @@ public class Mob extends JLabel  implements Runnable {
     }
     @Override
     public  void run(){
-        walkT = new Timer(125/*走路速度*/, new ActionListener() {
+        walkT = new Timer(225/*走路速度*/, new ActionListener() {
             int t1Tmp = 0;
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -78,7 +78,7 @@ public class Mob extends JLabel  implements Runnable {
 
                     if ((x+Mob.this.getIcon().getIconWidth()+20)<frmW) {
                         //向右
-                        Mob.this.setIcon(walk[t1Tmp % 4+8]);
+                        Mob.this.setIcon(walk[t1Tmp % 8+8]);
                         t1Tmp++;
                         x += 10;
                         //  Monster.this.repaint();

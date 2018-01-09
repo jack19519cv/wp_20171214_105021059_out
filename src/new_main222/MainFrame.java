@@ -153,11 +153,7 @@ public class  MainFrame extends JFrame {
       //  jpn.setLayout(new GridLayout(1,1,5,5));
 
 //jpn.setBounds(0,0,20,1000);
-mbadd();
-mbadd();
-mbadd();
-mbadd();
-mbadd();
+
         jbtnAdd.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -184,7 +180,7 @@ mbadd();
             public void actionPerformed(ActionEvent e) {
                 //jpn.add(new Monster(1000,1000));
 
-                if(jpn.get(countmob).getdead()){
+                if(jpn.get(jpn.size()-parseInt(jtf.getText())).getdead()){
                 jlyPane.remove(jpn.get(jpn.size()-parseInt(jtf.getText())));
                 //thread1List.add(new Thread(jpn.get(jpn.size()-1)));
                 jlyPane.repaint();
@@ -201,7 +197,8 @@ jbtnhit.addActionListener(new ActionListener() {
     @Override
     public void actionPerformed(ActionEvent e) {
 
-    jpn.get(parseInt(jtf.getText())).gethit();
+//        parseInt(jtf.getText())
+    jpn.get(jpn.size()-parseInt(jtf.getText())).gethit();
     }
 });
         threadListMob.add(new Thread(OX));

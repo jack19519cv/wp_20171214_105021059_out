@@ -20,12 +20,12 @@ public class Mob extends JPanel  implements Runnable {
     private  int frmH,frmW,x,y,r1,r;
     private  boolean Flag = true;
     private ImageIcon hit[]=new ImageIcon[2];
-    private ImageIcon die[]=new ImageIcon[6];
+    private ImageIcon die[]=new ImageIcon[18];
     private ImageIcon attack[]=new ImageIcon[24];
     private ImageIcon walk[]=new ImageIcon[16];
     private ImageIcon stand[]=new ImageIcon[22];
     private JLabel jlb=new JLabel();
-    private JLabel jlbHp=new JLabel("10");
+    private JLabel jlbHp=new JLabel("       10");
     private Timer t1;
     private  Timer walkT;
     private  Timer standT;
@@ -240,20 +240,20 @@ public class Mob extends JPanel  implements Runnable {
             int t1Tmp = 0;
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (t1Tmp < 3) {
+                if (t1Tmp < 9) {
                     if (r == 1) {
-                        jlb.setIcon(die[t1Tmp % 3 + 3]);
+                        jlb.setIcon(die[t1Tmp % 9 + 9]);
                         t1Tmp++;
-                        if (t1Tmp == 6) {
+                        if (t1Tmp == 18) {
                             dieT.stop();
                             t1Tmp = 0;
                             setdead(true);
                         }
                         // Monster.this.repaint();
                     } else {
-                        jlb.setIcon(die[t1Tmp % 3]);
+                        jlb.setIcon(die[t1Tmp % 9]);
                         t1Tmp++;
-                        if (t1Tmp == 6) {
+                        if (t1Tmp == 18) {
                             dieT.stop();
                             t1Tmp = 0;
                             setdead(true);
@@ -263,6 +263,20 @@ public class Mob extends JPanel  implements Runnable {
                 }
             }
 
+        });
+
+        t1 = new Timer(250, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                r1 = rand.nextInt(30000);
+                if (r1 >15000) {
+
+                } else {
+                    // walk1.stop();
+                    walkT.stop();
+                    standT.start();
+                }
+            }
         });
         while (true) {
             if (jlbHp.getText().equals("0")) {
@@ -327,15 +341,16 @@ public class Mob extends JPanel  implements Runnable {
             attack[i]=new ImageIcon("ox/attack/type1/right/attack1."+Integer.toString(i-12)+".png");
         }
         for(int i=0;i<1;i++) {
-
-            hit[i] = new ImageIcon("Slime/die/left/hit." + Integer.toString(i) + ".png");
-
+            hit[i] = new ImageIcon("ox/hit/left/hit1." + Integer.toString(i) + ".png");
         }
-
         for(int i=1;i<2;i++) {
-
-            hit[i]=new ImageIcon("Slime/die/right/hit."+Integer.toString(i-1)+".png");
-
+            hit[i]=new ImageIcon("ox/hit/right/hit1."+Integer.toString(i-1)+".png");
+        }
+        for(int i=0;i<9;i++) {
+            die[i] = new ImageIcon("ox/die/left/die1." + Integer.toString(i) + ".png");
+        }
+        for(int  i=9;i<18;i++) {
+            die[i]=new ImageIcon("ox/die/right/die1."+Integer.toString(i-9)+".png");
         }
     }
 }

@@ -25,6 +25,7 @@ public class  MainFrame extends JFrame {
     private JLayeredPane jlyPane = new JLayeredPane();
     private ArrayList<Character> charList = new ArrayList<Character>();
     private ArrayList<Monster> jpn= new ArrayList<Monster>();
+    private ArrayList<Mob> jpnMob= new ArrayList<Mob>();
     private ArrayList<Thread> threadList = new ArrayList<Thread>();
     private ArrayList<Thread> thread1List = new ArrayList<Thread>();
     private SkyPane testPane = new SkyPane();
@@ -153,6 +154,11 @@ public class  MainFrame extends JFrame {
       //  jpn.setLayout(new GridLayout(1,1,5,5));
 
 //jpn.setBounds(0,0,20,1000);
+        jpnMob.add(new Mob(1000,800,false));
+        jlyPane.add(jpnMob.get(0),new Integer(103));
+        jlyPane.repaint();
+        threadListMob.add(new Thread(jpnMob.get(0)));
+        threadListMob.get(0).start();
 
         jbtnAdd.addActionListener(new AbstractAction() {
             @Override
@@ -193,17 +199,18 @@ public class  MainFrame extends JFrame {
 
             }
         });
+
 jbtnhit.addActionListener(new ActionListener() {
     @Override
     public void actionPerformed(ActionEvent e) {
 
 //        parseInt(jtf.getText())
-    jpn.get(jpn.size()-parseInt(jtf.getText())).gethit();
+
+//    jpn.get(jpn.size()-parseInt(jtf.getText())).gethit();
+        jpnMob.get(0).gethit();
     }
 });
-        threadListMob.add(new Thread(OX));
-        threadListMob.get(0).start();
-        jlyPane.add(OX,new  Integer(103));
+
 
 //        thread1List.get(1).start();
 

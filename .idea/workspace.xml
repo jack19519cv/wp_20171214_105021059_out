@@ -2,20 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09c4b94e-adb7-4082-946c-6606f79738dc" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.10.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.11.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.5.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.6.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.7.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.8.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.9.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.info.hit.0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.info.hit.1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/left/attack1.info.hit.2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.10.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.11.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.5.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.6.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.7.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.8.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.9.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.info.hit.0.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.info.hit.1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ox/attack/type1/right/attack1.info.hit.2.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$1.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$10.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$10.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$11.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$11.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$2.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$3.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$4.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$4.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$5.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$5.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$6.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$6.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$7.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$7.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$8.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$8.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$9.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame$9.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/MainFrame.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob$1.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob$2.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob$2.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Mob.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$1.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$1.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$2.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$2.class" />
@@ -23,10 +43,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$4.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$4.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$5.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster$5.class" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster.class" afterPath="$PROJECT_DIR$/out/production/untitled104/new_main222/Monster.class" />
-      <change beforePath="$PROJECT_DIR$/ox/move.0.png" afterPath="$PROJECT_DIR$/ox/move/right/move.4.png" />
-      <change beforePath="$PROJECT_DIR$/ox/move.1.png" afterPath="$PROJECT_DIR$/ox/move/right/move.5.png" />
-      <change beforePath="$PROJECT_DIR$/ox/move.2.png" afterPath="$PROJECT_DIR$/ox/move/right/move.6.png" />
-      <change beforePath="$PROJECT_DIR$/ox/move.3.png" afterPath="$PROJECT_DIR$/ox/move/right/move.7.png" />
+      <change beforePath="$PROJECT_DIR$/ox/hit1.0.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/new_main222/MainFrame.java" afterPath="$PROJECT_DIR$/src/new_main222/MainFrame.java" />
       <change beforePath="$PROJECT_DIR$/src/new_main222/Mob.java" afterPath="$PROJECT_DIR$/src/new_main222/Mob.java" />
       <change beforePath="$PROJECT_DIR$/src/new_main222/Monster.java" afterPath="$PROJECT_DIR$/src/new_main222/Monster.java" />
@@ -41,12 +58,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/new_main222/Main.java">
+      <file leaf-file-name="Mob.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/new_main222/Mob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="-6006">
+              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <folding>
+                <element signature="e#2059#2060#0" expanded="true" />
+                <element signature="e#2083#2084#0" expanded="true" />
+                <element signature="e#2115#2116#0" expanded="true" />
+                <element signature="e#2139#2140#0" expanded="true" />
+                <element signature="e#8246#8247#0" expanded="true" />
+                <element signature="e#8273#8274#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,40 +78,29 @@
       <file leaf-file-name="Monster.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+            <state relative-caret-position="357">
+              <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="45" />
               <folding>
-                <element signature="e#2373#2374#0" expanded="true" />
-                <element signature="e#2396#2397#0" expanded="true" />
-                <element signature="e#2428#2429#0" expanded="true" />
-                <element signature="e#2452#2453#0" expanded="true" />
-                <element signature="method#actionPerformed#0;class#4053:5292" expanded="false" />
-                <element signature="method#actionPerformed#0;class#5801:6616" expanded="false" />
-                <element signature="method#actionPerformed#0;class#7436:7783" expanded="false" />
-                <element signature="e#9468#9469#0" expanded="true" />
-                <element signature="e#9492#9493#0" expanded="true" />
-                <element signature="e#9515#9516#0" expanded="true" />
-                <element signature="e#9539#9540#0" expanded="true" />
+                <element signature="e#2375#2376#0" expanded="true" />
+                <element signature="e#2398#2399#0" expanded="true" />
+                <element signature="e#2430#2431#0" expanded="true" />
+                <element signature="e#2454#2455#0" expanded="true" />
+                <element signature="method#actionPerformed#0;class#4055:5294" expanded="false" />
+                <element signature="method#actionPerformed#0;class#5803:6618" expanded="false" />
+                <element signature="e#9470#9471#0" expanded="true" />
+                <element signature="e#9494#9495#0" expanded="true" />
+                <element signature="e#9517#9518#0" expanded="true" />
+                <element signature="e#9541#9542#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mob.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/new_main222/Mob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1512">
-              <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="242" column="43" lean-forward="true" selection-start-line="242" selection-start-column="43" selection-end-line="242" selection-end-column="43" />
+            <state relative-caret-position="302">
+              <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -113,9 +126,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/new_main222/Main.java" />
-        <option value="$PROJECT_DIR$/src/new_main222/Mob.java" />
-        <option value="$PROJECT_DIR$/src/new_main222/Monster.java" />
         <option value="$PROJECT_DIR$/src/new_main222/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/new_main222/Monster.java" />
+        <option value="$PROJECT_DIR$/src/new_main222/Mob.java" />
       </list>
     </option>
   </component>
@@ -139,8 +152,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,29 +164,7 @@
             <path>
               <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
               <item name="wp_20171214_105021059_out" type="462c0819:PsiDirectoryNode" />
-              <item name="ox" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp_20171214_105021059_out" type="462c0819:PsiDirectoryNode" />
-              <item name="ox" type="462c0819:PsiDirectoryNode" />
-              <item name="move" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp_20171214_105021059_out" type="462c0819:PsiDirectoryNode" />
-              <item name="slimetest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp_20171214_105021059_out" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wp_20171214_105021059_out" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="new_Main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wp_20171214_105021059_out" type="b2602c69:ProjectViewProjectNode" />
@@ -185,20 +176,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\ox\move" />
-      <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\ox" />
       <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\ox\move\right" />
       <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\Slime\die\left" />
       <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\Slime" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\ox" />
+      <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out\ox\move" />
+      <recent name="C:\Users\amk16\OneDrive\桌面\github\wp_20171214_105021059_out" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,12 +293,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12789416" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08379272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.253125" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -344,17 +336,16 @@
         <state relative-caret-position="483">
           <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
           <folding>
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2396#2397#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4053:5292" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5801:6616" expanded="false" />
-            <element signature="method#actionPerformed#0;class#7436:7783" expanded="false" />
-            <element signature="e#9468#9469#0" expanded="true" />
-            <element signature="e#9492#9493#0" expanded="true" />
-            <element signature="e#9515#9516#0" expanded="true" />
-            <element signature="e#9539#9540#0" expanded="true" />
+            <element signature="e#2375#2376#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4055:5294" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5803:6618" expanded="false" />
+            <element signature="e#9470#9471#0" expanded="true" />
+            <element signature="e#9494#9495#0" expanded="true" />
+            <element signature="e#9517#9518#0" expanded="true" />
+            <element signature="e#9541#9542#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -363,7 +354,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
           <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+          <folding>
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2139#2140#0" expanded="true" />
+            <element signature="e#8246#8247#0" expanded="true" />
+            <element signature="e#8273#8274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5082">
+          <caret line="242" column="43" lean-forward="true" selection-start-line="242" selection-start-column="43" selection-end-line="242" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="e#2375#2376#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4055:5294" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5803:6618" expanded="false" />
+            <element signature="e#9470#9471#0" expanded="true" />
+            <element signature="e#9494#9495#0" expanded="true" />
+            <element signature="e#9517#9518#0" expanded="true" />
+            <element signature="e#9541#9542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/Mob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+          <folding>
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2139#2140#0" expanded="true" />
+            <element signature="e#8246#8247#0" expanded="true" />
+            <element signature="e#8273#8274#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -396,17 +444,16 @@
         <state relative-caret-position="231">
           <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2396#2397#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4053:5292" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5801:6616" expanded="false" />
-            <element signature="method#actionPerformed#0;class#7436:7783" expanded="false" />
-            <element signature="e#9468#9469#0" expanded="true" />
-            <element signature="e#9492#9493#0" expanded="true" />
-            <element signature="e#9515#9516#0" expanded="true" />
-            <element signature="e#9539#9540#0" expanded="true" />
+            <element signature="e#2375#2376#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4055:5294" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5803:6618" expanded="false" />
+            <element signature="e#9470#9471#0" expanded="true" />
+            <element signature="e#9494#9495#0" expanded="true" />
+            <element signature="e#9517#9518#0" expanded="true" />
+            <element signature="e#9541#9542#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -432,17 +479,16 @@
         <state relative-caret-position="4515">
           <caret line="227" column="1" lean-forward="false" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
           <folding>
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2396#2397#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4053:5292" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5801:6616" expanded="false" />
-            <element signature="method#actionPerformed#0;class#7436:7783" expanded="false" />
-            <element signature="e#9468#9469#0" expanded="true" />
-            <element signature="e#9492#9493#0" expanded="true" />
-            <element signature="e#9515#9516#0" expanded="true" />
-            <element signature="e#9539#9540#0" expanded="true" />
+            <element signature="e#2375#2376#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4055:5294" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5803:6618" expanded="false" />
+            <element signature="e#9470#9471#0" expanded="true" />
+            <element signature="e#9494#9495#0" expanded="true" />
+            <element signature="e#9517#9518#0" expanded="true" />
+            <element signature="e#9541#9542#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -468,17 +514,16 @@
         <state relative-caret-position="4515">
           <caret line="227" column="1" lean-forward="false" selection-start-line="227" selection-start-column="1" selection-end-line="227" selection-end-column="1" />
           <folding>
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2396#2397#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4053:5292" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5801:6616" expanded="false" />
-            <element signature="method#actionPerformed#0;class#7436:7783" expanded="false" />
-            <element signature="e#9468#9469#0" expanded="true" />
-            <element signature="e#9492#9493#0" expanded="true" />
-            <element signature="e#9515#9516#0" expanded="true" />
-            <element signature="e#9539#9540#0" expanded="true" />
+            <element signature="e#2375#2376#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4055:5294" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5803:6618" expanded="false" />
+            <element signature="e#9470#9471#0" expanded="true" />
+            <element signature="e#9494#9495#0" expanded="true" />
+            <element signature="e#9517#9518#0" expanded="true" />
+            <element signature="e#9541#9542#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -504,17 +549,16 @@
         <state relative-caret-position="1659">
           <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
           <folding>
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2396#2397#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4053:5292" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5801:6616" expanded="false" />
-            <element signature="method#actionPerformed#0;class#7436:7783" expanded="false" />
-            <element signature="e#9468#9469#0" expanded="true" />
-            <element signature="e#9492#9493#0" expanded="true" />
-            <element signature="e#9515#9516#0" expanded="true" />
-            <element signature="e#9539#9540#0" expanded="true" />
+            <element signature="e#2375#2376#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4055:5294" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5803:6618" expanded="false" />
+            <element signature="e#9470#9471#0" expanded="true" />
+            <element signature="e#9494#9495#0" expanded="true" />
+            <element signature="e#9517#9518#0" expanded="true" />
+            <element signature="e#9541#9542#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -612,26 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-          <folding>
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2396#2397#0" expanded="true" />
-            <element signature="e#2428#2429#0" expanded="true" />
-            <element signature="e#2452#2453#0" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4053:5292" expanded="false" />
-            <element signature="method#actionPerformed#0;class#5801:6616" expanded="false" />
-            <element signature="method#actionPerformed#0;class#7436:7783" expanded="false" />
-            <element signature="e#9468#9469#0" expanded="true" />
-            <element signature="e#9492#9493#0" expanded="true" />
-            <element signature="e#9515#9516#0" expanded="true" />
-            <element signature="e#9539#9540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/new_main222/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -640,19 +664,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/new_main222/Mob.java">
+    <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
+        <state relative-caret-position="302">
+          <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/new_main222/MainFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/new_main222/Monster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="242" column="43" lean-forward="true" selection-start-line="242" selection-start-column="43" selection-end-line="242" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="357">
+          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="45" />
+          <folding>
+            <element signature="e#2375#2376#0" expanded="true" />
+            <element signature="e#2398#2399#0" expanded="true" />
+            <element signature="e#2430#2431#0" expanded="true" />
+            <element signature="e#2454#2455#0" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4055:5294" expanded="false" />
+            <element signature="method#actionPerformed#0;class#5803:6618" expanded="false" />
+            <element signature="e#9470#9471#0" expanded="true" />
+            <element signature="e#9494#9495#0" expanded="true" />
+            <element signature="e#9517#9518#0" expanded="true" />
+            <element signature="e#9541#9542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/new_main222/Mob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6006">
+          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <folding>
+            <element signature="e#2059#2060#0" expanded="true" />
+            <element signature="e#2083#2084#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2139#2140#0" expanded="true" />
+            <element signature="e#8246#8247#0" expanded="true" />
+            <element signature="e#8273#8274#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

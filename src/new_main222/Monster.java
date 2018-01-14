@@ -52,6 +52,7 @@ private  boolean Flag = true;
         this.frmW = frmW;
         this.setOpaque(false);
         jlbHp.setForeground(Color.GREEN);
+
         jlbName.setForeground(Color.orange);
         jlbHp.setFont(new Font("Serif",Font.BOLD,30));
         x=rand.nextInt(frmW);
@@ -68,7 +69,7 @@ private  boolean Flag = true;
             this.Flag=true;
         }
        // this.setIcon(imgIcon[r][r1=rand.nextInt(1)]);
-       this.setBounds(x,y,90,200);//panel大小
+       this.setBounds(x,y,120,250);//panel大小
         jlbHp.setSize(place);
         jlbName.setSize(place);
         this.add(jlbHp);

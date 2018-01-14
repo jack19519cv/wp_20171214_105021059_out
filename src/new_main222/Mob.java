@@ -94,27 +94,31 @@ public class Mob extends JPanel  implements Runnable {
                             jlb.setIcon(hit[1]);
                             hitcount++;
                             if (hitcount == 2) {
+                                hitcount = 0;
+                                t1.start();
                                 hitT.stop();
 
 //                            walkT.start();
-                                hitcount = 0;
-                                hitstatus = false;
+
                             }
                             // Monster.this.repaint();
                         } else {
                             jlb.setIcon(hit[0]);
                             hitcount++;
                             if (hitcount == 2) {
+                                hitcount = 0;
+
+                                t1.start();
                                 hitT.stop();
 
 //                            walkT.start();
-                                hitcount = 0;
-                                hitstatus = false;
+
                             }
 
                         }
 
                         setDamage();
+                        hitstatus = false;
                     }
                 }
             });
@@ -126,7 +130,7 @@ public class Mob extends JPanel  implements Runnable {
     public void setDamage(){
         if(damage>0) {
             damage--;
-            jlbHp.setText(Integer.toString(damage));
+            jlbHp.setText("       "+Integer.toString(damage));
         }
 
     }
@@ -264,7 +268,7 @@ public class Mob extends JPanel  implements Runnable {
             }
 
         });
-
+        walkT.start();
         t1 = new Timer(250, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -279,7 +283,7 @@ public class Mob extends JPanel  implements Runnable {
             }
         });
         while (true) {
-            if (jlbHp.getText().equals("0")) {
+            if (jlbHp.getText().equals("       0")) {
                 setdead(true);
                 walkT.stop();
                 standT.stop();
@@ -287,14 +291,16 @@ public class Mob extends JPanel  implements Runnable {
 
 
             }else if(hitstatus){
-                standT.setDelay(600);
-                walkT.setDelay(600);
-                t1.setDelay(600);
-
-
+//                standT.setDelay(600);
+//                walkT.setDelay(600);
+//                t1.setDelay(600);
+                standT.stop();
+                walkT.stop();
+                t1.stop();
             }
             else{
-                t1.start();
+                walkT.start();
+//                t1.start();
             }
 
 

@@ -160,6 +160,17 @@ public class  MainFrame extends JFrame {
         threadListMob.add(new Thread(jpnMob.get(0)));
         threadListMob.get(0).start();
 
+//oxdead
+
+        if(jpnMob.get(0).getdead()){
+            jlyPane.remove(jpnMob.get(0));
+            jlyPane.repaint();
+            threadListMob.remove(threadListMob.size()-1);
+            jpnMob.remove(jpn.size()-1);
+
+        }
+
+
         jbtnAdd.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {

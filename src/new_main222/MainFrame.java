@@ -39,6 +39,7 @@ public class  MainFrame extends JFrame {
     private Timer jumpRLT;
     private Timer attackT;
     private Timer dropT;
+    private Timer MobdieT;
     private Map map;
     private boolean timeFlag=false;
     private boolean walkFlag=false;
@@ -160,15 +161,21 @@ public class  MainFrame extends JFrame {
         threadListMob.add(new Thread(jpnMob.get(0)));
         threadListMob.get(0).start();
 
-//oxdead
-
+        //oxdead
+MobdieT=new Timer(5000, new ActionListener() {
+    @Override
+    public void actionPerformed(ActionEvent e) {
         if(jpnMob.get(0).getdead()){
             jlyPane.remove(jpnMob.get(0));
             jlyPane.repaint();
             threadListMob.remove(threadListMob.size()-1);
-            jpnMob.remove(jpn.size()-1);
-
+            jpnMob.remove(jpnMob.size()-1);
+            MobdieT.stop();
         }
+    }
+});
+MobdieT.start();
+
 
 
         jbtnAdd.addActionListener(new AbstractAction() {

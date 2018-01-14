@@ -268,7 +268,7 @@ public class Mob extends JPanel  implements Runnable {
             }
 
         });
-        walkT.start();
+//        walkT.start();
         t1 = new Timer(250, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -291,16 +291,16 @@ public class Mob extends JPanel  implements Runnable {
 
 
             }else if(hitstatus){
-//                standT.setDelay(600);
-//                walkT.setDelay(600);
-//                t1.setDelay(600);
-                standT.stop();
-                walkT.stop();
-                t1.stop();
+                standT.setDelay(600);
+                walkT.setDelay(600);
+                t1.setDelay(600);
+//                standT.stop();
+//                walkT.stop();
+//                t1.stop();
             }
             else{
-                walkT.start();
-//                t1.start();
+//                walkT.start();
+                t1.start();
             }
 
 

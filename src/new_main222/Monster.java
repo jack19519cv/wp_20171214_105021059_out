@@ -294,14 +294,10 @@ dieT =new Timer(250, new ActionListener() {
                 walkT.stop();
                 standT.stop();
                 dieT.start();
-
-
             }else if(hitstatus){
                 standT.setDelay(800);
                 walkT.setDelay(800);
                 t1.setDelay(600);
-
-
             }
             else{
                 t1.start();

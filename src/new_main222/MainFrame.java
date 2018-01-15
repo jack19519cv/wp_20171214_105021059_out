@@ -63,6 +63,9 @@ public class  MainFrame extends JFrame {
    // private ImagePanel jpn= new ImagePanel();
 //    private JPanel background=new JPanel();
 //    private CharacterT CharacterT=new CharacterT(alert,jump,walk,stand,"alert",0);
+//   private Mob oldObj = new Mob();
+//    private  Mob newObj = new Mob();
+    private int index = jpnMob.indexOf(oldObj);
 
     public MainFrame() {
 
@@ -143,7 +146,7 @@ public class  MainFrame extends JFrame {
         jbtnDel.setBounds(0,20,1000,20);
         jlyPane.add(jbtnDel,new  Integer(103));
         jtf.setBounds(0,60,1000,30);
-        jlyPane.add(jtf,new  Integer(103));
+      //  jlyPane.add(jtf,new  Integer(103));
         jbtnhit.setBounds(0,40,1000,20);
         jlyPane.add(jbtnhit,new  Integer(103));
         jbtnAdd.setFocusable(false);
@@ -165,6 +168,10 @@ public class  MainFrame extends JFrame {
 MobdieT=new Timer(5000, new ActionListener() {
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(index!=-1){
+            jpnMob.add(index,newObj);
+            jpnMob.remove(index+1);
+        }
         if(jpnMob.get(0).getdead()){
             jlyPane.remove(jpnMob.get(0));
             jlyPane.repaint();
@@ -224,7 +231,7 @@ jbtnhit.addActionListener(new ActionListener() {
 
 //        parseInt(jtf.getText())
 
-//    jpn.get(jpn.size()-parseInt(jtf.getText())).gethit();
+    jpn.get(jpn.size()-parseInt(jtf.getText())).gethit();
         jpnMob.get(0).gethit();
     }
 });

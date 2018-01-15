@@ -148,6 +148,9 @@ public class Mob extends JPanel  implements Runnable {
                         //左
                         t1Tmp++;
                         x -= 10;
+
+                            t1Tmp=0;
+
                         Mob.this.repaint();
                     } else {
                         Mob.this.Flag = !Mob.this.Flag;
@@ -162,6 +165,9 @@ public class Mob extends JPanel  implements Runnable {
                         //向右
                         jlb.setIcon(walk[t1Tmp % 8+8]);
                         t1Tmp++;
+
+                            t1Tmp=0;
+
                         x += 10;
                         //  Monster.this.repaint();
                     } else {
@@ -174,7 +180,7 @@ public class Mob extends JPanel  implements Runnable {
 
             }
         });
-        standT = new Timer(500, new ActionListener() {
+        standT = new Timer(200, new ActionListener() {
             int t1Tmp = 0;
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -269,11 +275,11 @@ public class Mob extends JPanel  implements Runnable {
 
         });
 //        walkT.start();
-        t1 = new Timer(250, new ActionListener() {
+        t1 = new Timer(1000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 r1 = rand.nextInt(30000);
-                if (r1 >15000) {
+                if (r1 >29000) {
 
                 } else {
                     // walk1.stop();
@@ -291,17 +297,17 @@ public class Mob extends JPanel  implements Runnable {
 
 
             }else if(hitstatus){
-                standT.setDelay(600);
-                walkT.setDelay(600);
+//                standT.setDelay(600);
+//                walkT.setDelay(600);
                 t1.setDelay(600);
-//                standT.stop();
-//                walkT.stop();
+                standT.stop();
+                walkT.stop();
 //                t1.stop();
-            }
-            else{
+            }else{
 //                walkT.start();
                 t1.start();
             }
+
 
 
         }

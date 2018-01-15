@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import static java.lang.Integer.parseInt;
 
-public class  MainFrame extends JFrame {
+public class  MainFrame extends JFrame{
     private ImageIcon alert[]=new ImageIcon[6];
     private ImageIcon jump[]=new ImageIcon[2];
     private ImageIcon walk[]=new ImageIcon[8];
@@ -53,7 +53,7 @@ public class  MainFrame extends JFrame {
     private JButton jbtnDel= new JButton("Del"); //test
     private JButton jbtnhit= new JButton("hit"); //test
     private JButton jbtnhitmovie= new JButton("hit_movie"); //test
-    private Mob OX= new Mob(1000,1000,false);
+//    private Mob OX= new Mob(1000,1000,false);
     private ArrayList<Thread> threadListMob = new ArrayList<Thread>();
   private int countmob=1;
     private JTextField jtf = new JTextField();
@@ -63,9 +63,7 @@ public class  MainFrame extends JFrame {
    // private ImagePanel jpn= new ImagePanel();
 //    private JPanel background=new JPanel();
 //    private CharacterT CharacterT=new CharacterT(alert,jump,walk,stand,"alert",0);
-//   private Mob oldObj = new Mob();
-//    private  Mob newObj = new Mob();
-    private int index = jpnMob.indexOf(oldObj);
+
 
     public MainFrame() {
 
@@ -158,7 +156,7 @@ public class  MainFrame extends JFrame {
       //  jpn.setLayout(new GridLayout(1,1,5,5));
 
 //jpn.setBounds(0,0,20,1000);
-        jpnMob.add(new Mob(1000,800,false));
+        jpnMob.add(new Mob(1000,800,false,MainFrame.this));
         jlyPane.add(jpnMob.get(0),new Integer(103));
         jlyPane.repaint();
         threadListMob.add(new Thread(jpnMob.get(0)));
@@ -168,10 +166,7 @@ public class  MainFrame extends JFrame {
 MobdieT=new Timer(5000, new ActionListener() {
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(index!=-1){
-            jpnMob.add(index,newObj);
-            jpnMob.remove(index+1);
-        }
+
         if(jpnMob.get(0).getdead()){
             jlyPane.remove(jpnMob.get(0));
             jlyPane.repaint();
@@ -691,6 +686,10 @@ jbtnhit.addActionListener(new ActionListener() {
         thread1List.get(thread1List.size()-1).start();
         System.out.println("jpn:"+jpn.size());
         System.out.println("thread:"+thread1List.size());
+    }
+    public Character  getchar(){
+
+        return charList.get(0);
     }
 //    public void imgAminal(int start,int end,boolean charface){
 //        for(){}

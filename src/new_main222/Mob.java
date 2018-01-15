@@ -25,19 +25,24 @@ public class Mob extends JPanel  implements Runnable {
     private ImageIcon walk[]=new ImageIcon[16];
     private ImageIcon stand[]=new ImageIcon[22];
     private JLabel jlb=new JLabel();
-    private JLabel jlbHp=new JLabel("       10");
+    private JLabel jlbHp=new JLabel("10");
+    private  Dimension place = new Dimension(50,30);
     private Timer t1;
     private  Timer walkT;
     private  Timer standT;
     private  Timer attackT;
     private  Timer dieT;
     private  Timer hitT;
+    private MainFrame mf;
     private boolean d = false;
     private  int nowHp;
     private int damage=10;
     private boolean hitstatus=false;
-    public Mob(int frmH, int frmW,boolean d){
-        this.setLayout(new GridLayout(3,1,0,0));
+    private boolean attackstatus=false;
+    public Mob(int frmH, int frmW,boolean d,MainFrame mf1){
+        mf=mf1;
+        this.setLayout(new BorderLayout(3,1));
+
         this.d=d;
         this.nowHp=nowHp;
         this.frmH= frmH;
@@ -55,7 +60,7 @@ public class Mob extends JPanel  implements Runnable {
         x=rand.nextInt(frmW);
         //y=rand.nextInt(frmH-100);
         // y=390;
-        y=175;
+        y=310;
 //        sety();
 //        r=rand.nextInt(6);
         r=rand.nextInt(2);
@@ -67,7 +72,8 @@ public class Mob extends JPanel  implements Runnable {
             this.Flag=true;
         }
         this.setOpaque(false);
-        this.setBounds(x,y,500,500);
+        this.setBounds(x,y,500,250);
+        jlbHp.setSize(place);
         this.add(jlbHp);
         this.add(jlb);
 //        this.setIcon(walk[r]);
@@ -127,10 +133,52 @@ public class Mob extends JPanel  implements Runnable {
 
         return 1;
     }
+    public int getattack(){
+        attackstatus=true;
+        if(!d) {
+            attackT = new Timer(500, new ActionListener() {
+                int t1Tmp = 0;
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                        if (r == 1) {
+                            jlb.setIcon(attack[t1Tmp % 12 + 12]);
+                            t1Tmp++;
+
+                            if (t1Tmp == 24) {
+                                attackT.stop();
+
+                                t1.start();
+                                t1Tmp = 0;
+                            }
+                            // Monster.this.repaint();
+                        } else {
+                            jlb.setIcon(attack[t1Tmp % 12]);
+
+                            t1Tmp++;
+                            if (t1Tmp == 24) {
+
+                                attackT.stop();
+
+                                t1.start();
+                                t1Tmp = 0;
+                            }
+                        }
+
+                        attackstatus = false;
+
+                }
+            });
+
+        }
+        attackT.start();
+
+        return 1;
+    }
     public void setDamage(){
         if(damage>0) {
             damage--;
-            jlbHp.setText("       "+Integer.toString(damage));
+            jlbHp.setText(Integer.toString(damage));
         }
 
     }
@@ -149,8 +197,6 @@ public class Mob extends JPanel  implements Runnable {
                         t1Tmp++;
                         x -= 10;
 
-                            t1Tmp=0;
-
                         Mob.this.repaint();
                     } else {
                         Mob.this.Flag = !Mob.this.Flag;
@@ -165,9 +211,6 @@ public class Mob extends JPanel  implements Runnable {
                         //向右
                         jlb.setIcon(walk[t1Tmp % 8+8]);
                         t1Tmp++;
-
-                            t1Tmp=0;
-
                         x += 10;
                         //  Monster.this.repaint();
                     } else {
@@ -207,45 +250,7 @@ public class Mob extends JPanel  implements Runnable {
                 }
             }
         });
-        attackT = new Timer(500, new ActionListener() {
-            int t1Tmp = 0;
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (r == 1) {
-                    jlb.setIcon(attack[t1Tmp % 12+12]);
-                    t1Tmp++;
-                    if(t1Tmp==16){
-                        gety(145);
 
-                    }else {
-                        gety(175);
-                    }
-                    if(t1Tmp==24){
-                        attackT.stop();
-
-                        walkT.start();
-                        t1Tmp=0;
-                    }
-                    // Monster.this.repaint();
-                } else {
-                    jlb.setIcon(attack[t1Tmp % 12]);
-
-                    t1Tmp++;
-                    if(t1Tmp==3){
-                        gety(145);
-                    }else {
-                        gety(175);
-                    }
-                    if(t1Tmp==24){
-
-                        attackT.stop();
-
-                        walkT.start();
-                        t1Tmp=0;
-                    }
-                }
-            }
-        });
         dieT =new Timer(250, new ActionListener() {
             int t1Tmp = 0;
             @Override
@@ -280,16 +285,18 @@ public class Mob extends JPanel  implements Runnable {
             public void actionPerformed(ActionEvent e) {
                 r1 = rand.nextInt(30000);
                 if (r1 >29000) {
-
+//                    walkT.start();
                 } else {
-                    // walk1.stop();
+//                     attackT.start();
                     walkT.stop();
+//                    walkT.start();
                     standT.start();
                 }
             }
         });
+
         while (true) {
-            if (jlbHp.getText().equals("       0")) {
+            if (jlbHp.getText().equals("0")) {
                 setdead(true);
                 walkT.stop();
                 standT.stop();
@@ -303,9 +310,19 @@ public class Mob extends JPanel  implements Runnable {
                 standT.stop();
                 walkT.stop();
 //                t1.stop();
-            }else{
+            }
+            else{
 //                walkT.start();
+
+
                 t1.start();
+            } if(true){
+
+                t1.setDelay(600);
+                standT.stop();
+                walkT.stop();
+                attackT.start();
+
             }
 
 

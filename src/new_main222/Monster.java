@@ -44,7 +44,7 @@ private  boolean Flag = true;
   //frmW=移動範圍 d=diestatus
     public  Monster(int frmH, int frmW,boolean d ){
 
-        this.setLayout(new GridLayout(3,1,0,0));
+        this.setLayout(new BorderLayout(3,1));
         this.d=d;
         this.nowHp=nowHp;
         setMobAnimal();
@@ -69,7 +69,7 @@ private  boolean Flag = true;
             this.Flag=true;
         }
        // this.setIcon(imgIcon[r][r1=rand.nextInt(1)]);
-       this.setBounds(x,y,120,250);//panel大小
+       this.setBounds(x,y,120,190);//panel大小
         jlbHp.setSize(place);
         jlbName.setSize(place);
         this.add(jlbHp);
@@ -136,7 +136,6 @@ hitstatus=true;
             damage--;
             jlbHp.setText(Integer.toString(damage));
         }
-
     }
     @Override
     public  void run(){

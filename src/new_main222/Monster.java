@@ -13,82 +13,85 @@ import java.util.Random;
 /**
  * Created by jackwang on 2017/12/14.
  */
-public  class Monster extends JPanel implements Runnable {
+public class Monster extends JPanel implements Runnable {
 
     private BufferedImage image;
     // private Image image;
-    private  int imgW, imgH;
-    private  int frmH,frmW,r1,r;
-    private int x,y=0;
-    private ImageIcon hit[]=new ImageIcon[2];
-    private ImageIcon walk[]=new ImageIcon[6];
-    private ImageIcon stand[]=new ImageIcon[6];
-    private ImageIcon die[]=new ImageIcon[6];
-    private boolean up,down,right,left,att=false;
-    private JLabel jlb=new JLabel();
-    private JLabel jlbHp=new JLabel("10");
-    private JLabel jlbName=new JLabel("惡水靈");
-    private  Dimension place = new Dimension(50,30);
-   // private ImageIcon[][] imgIcon={{new ImageIcon("slimetest/slime1.png")},{new ImageIcon("slimetest/slime.png")}};
-private  boolean Flag = true;
-    private  Timer t1;
-    private  Timer walkT;
-    private  Timer dieT;
-    private  Timer standT;
-    private  Timer hitT;
+    private int imgW, imgH;
+    private int frmH, frmW, r1, r;
+    private int x, y = 0;
+    private ImageIcon hit[] = new ImageIcon[2];
+    private ImageIcon walk[] = new ImageIcon[6];
+    private ImageIcon stand[] = new ImageIcon[6];
+    private ImageIcon die[] = new ImageIcon[6];
+    private boolean up, down, right, left, att = false;
+    private JLabel jlb = new JLabel();
+    private JLabel jlbHp = new JLabel("10");
+    private JLabel jlbName = new JLabel("惡水靈");
+    private Dimension place = new Dimension(50, 30);
+    // private ImageIcon[][] imgIcon={{new ImageIcon("slimetest/slime1.png")},{new ImageIcon("slimetest/slime.png")}};
+    private boolean Flag = true;
+    private Timer t1;
+    private Timer walkT;
+    private Timer dieT;
+    private Timer standT;
+    private Timer hitT;
     private boolean d = false;
-    private  int nowHp;
+    private int nowHp;
     private Random rand = new Random();
-    private int damage=10;
-    private boolean hitstatus=false;
-  //frmW=移動範圍 d=diestatus
-    public  Monster(int frmH, int frmW,boolean d ){
+    private int damage = 10;
+    private boolean hitstatus = false;
 
-        this.setLayout(new BorderLayout(3,1));
-        this.d=d;
-        this.nowHp=nowHp;
+    //frmW=移動範圍 d=diestatus
+    public Monster(int frmH, int frmW, boolean d) {
+
+        this.setLayout(new BorderLayout(3, 1));
+        this.d = d;
+        this.nowHp = nowHp;
         setMobAnimal();
-        this.frmH= frmH;
+        this.frmH = frmH;
         this.frmW = frmW;
         this.setOpaque(false);
         jlbHp.setForeground(Color.GREEN);
 
         jlbName.setForeground(Color.orange);
-        jlbHp.setFont(new Font("Serif",Font.BOLD,30));
-        x=rand.nextInt(frmW);
+        jlbHp.setFont(new Font("Serif", Font.BOLD, 30));
+        x = rand.nextInt(frmW);
         //y=rand.nextInt(frmH-100);
-        y=385;
-       // y=340;
+        y = 385;
+        // y=340;
 //        r=rand.nextInt(6);
-        r=rand.nextInt(2);
+        r = rand.nextInt(2);
 
-       // setMobAnimal();
-        if(r==1){
-            this.Flag=false;
-        }else {
-            this.Flag=true;
+        // setMobAnimal();
+        if (r == 1) {
+            this.Flag = false;
+        } else {
+            this.Flag = true;
         }
-       // this.setIcon(imgIcon[r][r1=rand.nextInt(1)]);
-       this.setBounds(x,y,120,190);//panel大小
+        // this.setIcon(imgIcon[r][r1=rand.nextInt(1)]);
+        this.setBounds(x, y, 120, 190);//panel大小
         jlbHp.setSize(place);
         jlbName.setSize(place);
         this.add(jlbHp);
         this.add(jlb);
-        
-       // this.add(jlbName);
+
+        // this.add(jlbName);
 
 
     }
 
-    private void setdead(boolean d){
-       this.d=d;
+    private void setdead(boolean d) {
+        this.d = d;
     }
-    public   boolean getdead(){
+
+    public boolean getdead() {
         return d;
     }
-    public int gethit(){
-hitstatus=true;
-        if(!d) {
+
+    public int gethit() {
+        hitstatus = true;
+        if (!d) {
             hitT = new Timer(500, new ActionListener() {
                 int hitcount = 0;
 
@@ -101,11 +104,9 @@ hitstatus=true;
                             left = true;
                             hitcount++;
                             if (hitcount == 2) {
-                                hitT.stop();
-
-//                            walkT.start();
                                 hitcount = 0;
-                                hitstatus = false;
+                                t1.start();
+                                hitT.stop();
                             }
                             // Monster.this.repaint();
                         } else {
@@ -113,16 +114,15 @@ hitstatus=true;
                             right = true;
                             hitcount++;
                             if (hitcount == 2) {
-                                hitT.stop();
-
-//                            walkT.start();
                                 hitcount = 0;
-                                hitstatus = false;
+                                t1.start();
+                                hitT.stop();
                             }
 
                         }
 
                         setDamage();
+                        hitstatus = false;
                     }
                 }
             });
@@ -131,57 +131,60 @@ hitstatus=true;
 
         return 1;
     }
-    public void setDamage(){
-        if(damage>0) {
+
+    public void setDamage() {
+        if (damage > 0) {
             damage--;
             jlbHp.setText(Integer.toString(damage));
         }
     }
+
     @Override
-    public  void run(){
+    public void run() {
 
-    walkT = new Timer(125/*走路速度*/, new ActionListener() {
-        int t1Tmp = 0;
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            if (Monster.this.Flag) {
-                if ((x - 10) > 0) {
-                    //向左
+        walkT = new Timer(125/*走路速度*/, new ActionListener() {
+            int t1Tmp = 0;
 
-                    jlb.setIcon(walk[t1Tmp % 3]);
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (Monster.this.Flag) {
+                    if ((x - 10) > 0) {
+                        //向左
 
-                    left = true;//左
-                    t1Tmp++;
-                    x -= 10;
-                    Monster.this.repaint();
+                        jlb.setIcon(walk[t1Tmp % 3]);
+
+                        left = true;//左
+                        t1Tmp++;
+                        x -= 10;
+                        Monster.this.repaint();
+                    } else {
+                        Monster.this.Flag = !Monster.this.Flag;
+                        r = 1;
+
+                        x += 10;
+                    }
+                    Monster.this.setLocation(x, y);
+                    //   Monster.this.repaint();
                 } else {
-                    Monster.this.Flag = !Monster.this.Flag;
-                    r = 1;
 
-                    x += 10;
-                }
-                Monster.this.setLocation(x, y);
-                //   Monster.this.repaint();
-            } else {
+                    if ((x + jlb.getIcon().getIconWidth() + 20) < frmW) {
+                        //向右
+                        jlb.setIcon(walk[t1Tmp % 3 + 3]);
 
-                if ((x+jlb.getIcon().getIconWidth()+20)<frmW) {
-                    //向右
-                    jlb.setIcon(walk[t1Tmp % 3+3]);
-
-                    right = true;//右
-                    t1Tmp++;
-                    x += 10;
-                    //  Monster.this.repaint();
-                } else {
-                    Monster.this.Flag = !Monster.this.Flag;
-                    r = 0;
-                    x -= 10;
-                }
-                Monster.this.setLocation(x, y);
+                        right = true;//右
+                        t1Tmp++;
+                        x += 10;
+                        //  Monster.this.repaint();
+                    } else {
+                        Monster.this.Flag = !Monster.this.Flag;
+                        r = 0;
+                        x -= 10;
+                    }
+                    Monster.this.setLocation(x, y);
 //                Monster.this.repaint();
+                }
             }
-        }
-    });
+        });
 //
 //    walk1 = new Timer(500, new ActionListener() {
 //        int t1Tmp = 0;
@@ -206,77 +209,81 @@ hitstatus=true;
 //        }
 //
 //    });
-    standT = new Timer(500, new ActionListener() {
-        int t1Tmp = 0;
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            if (r == 1) {
-                jlb.setIcon(stand[t1Tmp % 3+3]);
+        standT = new Timer(500, new ActionListener() {
+            int t1Tmp = 0;
 
-                left = true;
-                t1Tmp++;
-                if(t1Tmp==6){
-                    standT.stop();
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (r == 1) {
+                    jlb.setIcon(stand[t1Tmp % 3 + 3]);
 
-                    walkT.start();
-                    t1Tmp=0;
+                    left = true;
+                    t1Tmp++;
+                    if (t1Tmp == 6) {
+                        standT.stop();
+
+                        walkT.start();
+                        t1Tmp = 0;
+                    }
+                    // Monster.this.repaint();
+                } else {
+                    jlb.setIcon(stand[t1Tmp % 3]);
+                    right = true;
+                    t1Tmp++;
+                    if (t1Tmp == 6) {
+                        standT.stop();
+
+                        walkT.start();
+                        t1Tmp = 0;
+                    }
+
                 }
-                // Monster.this.repaint();
-            } else {
-                jlb.setIcon(stand[t1Tmp % 3]);
-                right = true;
-                t1Tmp++;
-                if(t1Tmp==6){
-                    standT.stop();
-
-                    walkT.start();
-                    t1Tmp=0;
-                }
-
-            }
 //            Monster.this.repaint();
 //            System.out.println(t1Tmp);
-        }
-
-    });
-
-
-dieT =new Timer(250, new ActionListener() {
-    int t1Tmp = 0;
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if (t1Tmp < 3) {
-            if (r == 1) {
-                jlb.setIcon(die[t1Tmp % 3 + 3]);
-
-                left = true;
-                t1Tmp++;
-                if (t1Tmp == 6) {
-                    dieT.stop();
-                    t1Tmp = 0;
-                    setdead(true);
-                }
-                // Monster.this.repaint();
-            } else {
-                jlb.setIcon(die[t1Tmp % 3]);
-                right = true;
-                t1Tmp++;
-                if (t1Tmp == 6) {
-                    dieT.stop();
-                    t1Tmp = 0;
-                    setdead(true);
-                }
-
             }
-        }
-    }
 
-});
-        t1 = new Timer(250, new ActionListener() {
+        });
+
+
+        dieT = new Timer(250, new ActionListener() {
+            int t1Tmp = 0;
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (t1Tmp < 3) {
+                    if (r == 1) {
+                        jlb.setIcon(die[t1Tmp % 3 + 3]);
+
+                        left = true;
+                        t1Tmp++;
+                        if (t1Tmp == 6) {
+                            setdead(true);
+                            dieT.stop();
+                            t1Tmp = 0;
+
+                        }
+                        // Monster.this.repaint();
+                    } else {
+                        jlb.setIcon(die[t1Tmp % 3]);
+                        right = true;
+                        t1Tmp++;
+                        if (t1Tmp == 6) {
+                            setdead(true);
+                            dieT.stop();
+                            t1Tmp = 0;
+
+                        }
+
+                    }
+                }
+            }
+
+        });
+        t1 = new Timer(1200, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 r1 = rand.nextInt(30000);
-                if (r1 >15000) {
+                if (r1 > 29990) {
 
                 } else {
                     // walk1.stop();
@@ -293,12 +300,15 @@ dieT =new Timer(250, new ActionListener() {
                 walkT.stop();
                 standT.stop();
                 dieT.start();
-            }else if(hitstatus){
-                standT.setDelay(800);
-                walkT.setDelay(800);
-                t1.setDelay(600);
-            }
-            else{
+            } else if (hitstatus) {
+//                t1.setDelay(300);
+                standT.stop();
+                walkT.stop();
+
+//                standT.setDelay(1000);
+//                walkT.setDelay(1000);
+
+            } else {
                 t1.start();
             }
 
@@ -306,74 +316,76 @@ dieT =new Timer(250, new ActionListener() {
         }
 
 
+    }
 
 
-}
+    private void setMobAnimal() {
 
+        for (int i = 0; i < 3; i++) {
 
-    private  void  setMobAnimal(){
-
-        for(int i=0;i<3;i++){
-
-            walk[i]=new ImageIcon("Slime/walk/left/move."+Integer.toString(i)+".png");
+            walk[i] = new ImageIcon("Slime/walk/left/move." + Integer.toString(i) + ".png");
 
         }
 
-        for(int i=3;i<6;i++){
+        for (int i = 3; i < 6; i++) {
 
-            walk[i]=new ImageIcon("Slime/walk/right/move."+Integer.toString(i-3)+".png");
+            walk[i] = new ImageIcon("Slime/walk/right/move." + Integer.toString(i - 3) + ".png");
 
         }
 
-        for(int i=0;i<1;i++) {
+        for (int i = 0; i < 1; i++) {
 
             hit[i] = new ImageIcon("Slime/die/left/hit." + Integer.toString(i) + ".png");
 
         }
 
-        for(int i=1;i<2;i++) {
+        for (int i = 1; i < 2; i++) {
 
-            hit[i]=new ImageIcon("Slime/die/right/hit."+Integer.toString(i-1)+".png");
+            hit[i] = new ImageIcon("Slime/die/right/hit." + Integer.toString(i - 1) + ".png");
 
         }
 
-              for(int i=0;i<3;i++) {
+        for (int i = 0; i < 3; i++) {
 
             stand[i] = new ImageIcon("Slime/stand/left/stand." + Integer.toString(i) + ".png");
 
         }
 
-        for(int  i=3;i<6;i++) {
+        for (int i = 3; i < 6; i++) {
 
-            stand[i]=new ImageIcon("Slime/stand/right/stand."+Integer.toString(i-3)+".png");
+            stand[i] = new ImageIcon("Slime/stand/right/stand." + Integer.toString(i - 3) + ".png");
 
         }
 
-        for(int i=0;i<3;i++) {
+        for (int i = 0; i < 3; i++) {
 
             die[i] = new ImageIcon("Slime/die/left/die." + Integer.toString(i) + ".png");
 
         }
 
-        for(int  i=3;i<6;i++) {
+        for (int i = 3; i < 6; i++) {
 
-            die[i]=new ImageIcon("Slime/die/right/die."+Integer.toString(i-3)+".png");
+            die[i] = new ImageIcon("Slime/die/right/die." + Integer.toString(i - 3) + ".png");
 
         }
 
 
-
     }
 
-    public  int getImgWidth(){return imgW;}
-    public int getImgHeight(){
+    public int getImgWidth() {
+        return imgW;
+    }
+
+    public int getImgHeight() {
 
         return imgH;
     }
-    public  int getx(){
+
+    public int getx() {
         return x;
     }
-    public int gety(){
+
+    public int gety() {
         return y;
     }
 //        @Override

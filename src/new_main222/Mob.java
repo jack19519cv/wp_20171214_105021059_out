@@ -139,6 +139,8 @@ public class Mob extends JPanel implements Runnable {
     }
 
     public int getattack() {
+        standT.stop();
+        walkT.stop();
         attackstatus = true;
         if (!d) {
             attackT = new Timer(500, new ActionListener() {
@@ -152,10 +154,12 @@ public class Mob extends JPanel implements Runnable {
                         t1Tmp++;
 
                         if (t1Tmp == 24) {
-                            attackT.stop();
 
-                            t1.start();
+                            System.out.println( " //向右");
+
                             t1Tmp = 0;
+                            attackT.stop();
+                            t1.start();
                         }
                         // Monster.this.repaint();
                     } else {
@@ -163,11 +167,11 @@ public class Mob extends JPanel implements Runnable {
 
                         t1Tmp++;
                         if (t1Tmp == 24) {
+                            System.out.println( " //向左");
 
-                            attackT.stop();
-
-                            t1.start();
                             t1Tmp = 0;
+                            attackT.stop();
+                            t1.start();
                         }
                     }
 
@@ -292,11 +296,11 @@ public class Mob extends JPanel implements Runnable {
 
         });
 //        walkT.start();
-        t1 = new Timer(1000, new ActionListener() {
+        t1 = new Timer(1500, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 r1 = rand.nextInt(30000);
-                if (r1 > 29900) {
+                if (r1 > 29990) {
 //                    walkT.start();
                 } else {
 //                     attackT.start();
@@ -322,16 +326,16 @@ public class Mob extends JPanel implements Runnable {
                 standT.stop();
                 walkT.stop();
 //                t1.stop();
-            } else {
-//                walkT.start();
-                if (!hitstatus) {
-                    if (attackstatus) {
-                        t1.setDelay(600);
-                        standT.stop();
-                        walkT.stop();
-                        attackT.start();
-                    }
+            }  if (!hitstatus) {
+                if (attackstatus) {
+//                    t1.setDelay(600);
+                    standT.stop();
+                    walkT.stop();
+                    attackT.start();
                 }
+            }else {
+//                walkT.start();
+
 
                 t1.start();
             }

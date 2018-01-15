@@ -7,15 +7,15 @@ import java.io.File;
 
 public class Main {
 
-    public static void main(String args[])throws Exception{
-        MainFrame mf=new MainFrame();
+    public static void main(String args[]) throws Exception {
+        MainFrame mf = new MainFrame();
         mf.setVisible(true);
 
-        AudioInputStream inputStream= AudioSystem.getAudioInputStream(new File("Maplestory - Henesys Floral Life.wav"));
-        Clip clip = AudioSystem.getClip();
-        clip.open(inputStream);
-        clip.loop(Clip.LOOP_CONTINUOUSLY);
-        Thread.sleep(10000);
+//        AudioInputStream inputStream = AudioSystem.getAudioInputStream(new File("Maplestory - Henesys Floral Life.wav"));
+//        Clip clip = AudioSystem.getClip();
+//        clip.open(inputStream);
+//        clip.loop(Clip.LOOP_CONTINUOUSLY);
+//        Thread.sleep(10000);
 
     }
 }
